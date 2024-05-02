@@ -55,9 +55,3 @@ func _unhandled_input(event):
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			camera_pivot_amount = clamp( - event.relative.x * camera_sensitivity, -0.3, 0.3)
 			camera_twist_amount = clamp( - event.relative.y * camera_sensitivity, -0.3, 0.3)
-	
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_WHEEL_UP and event.pressed:
-			camera.position.z = clamp(camera.position.z + 0.1, 1, 3)
-		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN and event.pressed:
-			camera.position.z = clamp(camera.position.z - 0.1, 1, 3)
