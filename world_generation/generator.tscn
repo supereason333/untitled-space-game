@@ -38,9 +38,11 @@ script/source = "extends Node3D
 # Base Planet
 
 var planet_id := 0
-var planet_size := 0
+var planet_radius := 0
 var planet_type_id := 0
 var planet_ring := false
+var orbit_r1 := 0.0
+var orbit_r2 := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -50,12 +52,21 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func display_values():
+	print_debug(\"Planet ID: \" + str(planet_id) + \", Planet Radius: \" + str(planet_radius) + \", Planet Type ID: \" + str(planet_type_id) + \", Planet ring: \" + str(planet_ring) + \", Orbit r1 and r2: \" + str(orbit_r1) + \", \" + str(orbit_r2))
 "
 
 [sub_resource type="GDScript" id="GDScript_24ut7"]
 script/source = "extends Node3D
 
 # Base Satellite
+
+var is_moon := false
+var radius := 0
+var orbit_r1 := 0.0
+var orbit_r2 := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
