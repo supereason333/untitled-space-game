@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://qd4tmdjp2ia6"]
+
+[ext_resource type="Script" path="res://world_generation/generator.gd" id="1_k8c4s"]
+
+[sub_resource type="GDScript" id="GDScript_jorng"]
+script/source = "extends Node3D
+
+# Base system
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_bixk4"]
+script/source = "extends Node3D
+
+# Base star
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_3yar0"]
+script/source = "extends Node3D
+
+# Base Planet
+
+var planet_id := 0
+var planet_size := 0
+var planet_type_id := 0
+var planet_ring := false
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_24ut7"]
+script/source = "extends Node3D
+
+# Base Satellite
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Generator" type="Node3D"]
+script = ExtResource("1_k8c4s")
+
+[node name="BaseSystem" type="Node3D" parent="."]
+script = SubResource("GDScript_jorng")
+
+[node name="BaseStar" type="Node3D" parent="BaseSystem"]
+script = SubResource("GDScript_bixk4")
+
+[node name="BasePlanet" type="Node3D" parent="BaseSystem/BaseStar"]
+script = SubResource("GDScript_3yar0")
+
+[node name="BaseSatellite" type="Node3D" parent="BaseSystem/BaseStar/BasePlanet"]
+script = SubResource("GDScript_24ut7")
+
+[node name="Generated" type="Node3D" parent="."]
