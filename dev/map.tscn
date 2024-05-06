@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc3snhfs1e4yo"]
+[gd_scene load_steps=2 format=3 uid="uid://bc3snhfs1e4yo"]
 
 [ext_resource type="Script" path="res://dev/map.gd" id="1_x0hb4"]
-[ext_resource type="PackedScene" uid="uid://qd4tmdjp2ia6" path="res://world_generation/generator.tscn" id="2_uevdd"]
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_x0hb4")
-
-[node name="Generator" parent="." instance=ExtResource("2_uevdd")]
-
-[node name="GeneratedSystem" type="Node" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]

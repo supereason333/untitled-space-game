@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://qd4tmdjp2ia6"]
 
-[ext_resource type="Script" path="res://world_generation/generator.gd" id="1_k8c4s"]
+[ext_resource type="Script" path="res://world_generation/generator_old.gd" id="1_86l0e"]
 
 [sub_resource type="GDScript" id="GDScript_jorng"]
 script/source = "extends Node3D
@@ -79,7 +79,7 @@ func _process(delta):
 "
 
 [node name="Generator" type="Node3D"]
-script = ExtResource("1_k8c4s")
+script = ExtResource("1_86l0e")
 
 [node name="BaseSystem" type="Node3D" parent="."]
 script = SubResource("GDScript_jorng")

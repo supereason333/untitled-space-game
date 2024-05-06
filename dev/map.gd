@@ -8,7 +8,6 @@ var rnd = RandomNumberGenerator.new()
 func _ready():
 	$GeneratedSystem.add_child($Generator.generate_system())
 	star = $GeneratedSystem.get_child(0)
-	_draw()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,4 +24,5 @@ func _draw():
 		draw_circle(pos, 8, Color.BLUE)
 		for r in i.get_children():
 			rads = rnd.randf_range(0, 3.141 * 2)
-			draw_circle(Vector2(r.orbit_r1 / 15000 * cos(rads), r.orbit_r1 / 15000 * cos(rads)) + pos, 4, Color.WHITE)
+			var π = 3.14159
+			draw_circle(Vector2(r.orbit_r1 / 15000 * cos(π), r.orbit_r1 / 15000 * cos(π)) + pos, 4, Color.WHITE)
