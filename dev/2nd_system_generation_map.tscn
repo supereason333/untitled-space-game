@@ -1,0 +1,165 @@
+[gd_scene load_steps=3 format=3 uid="uid://8v0vddnn0sfq"]
+
+[ext_resource type="Script" path="res://dev/2nd_system_generation_map.gd" id="1_qwu8d"]
+[ext_resource type="PackedScene" uid="uid://cldte13bdhn86" path="res://world_generation/generator_root.tscn" id="2_l6l35"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_qwu8d")
+
+[node name="GeneratorRoot" parent="." instance=ExtResource("2_l6l35")]
+
+[node name="ResultSystem" type="Node" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="systemid label" type="Label" parent="GUI"]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 341.0
+offset_bottom = 42.0
+text = "System ID"
+
+[node name="seed label" type="Label" parent="GUI"]
+offset_left = 416.0
+offset_top = 16.0
+offset_right = 497.0
+offset_bottom = 42.0
+text = "Main Seed"
+
+[node name="jeepers creepers" type="Label" parent="GUI"]
+offset_left = 16.0
+offset_top = 312.0
+offset_right = 116.0
+offset_bottom = 338.0
+text = "Select Planet"
+
+[node name="IDSpinBox" type="SpinBox" parent="GUI"]
+offset_left = 264.0
+offset_top = 48.0
+offset_right = 347.062
+offset_bottom = 79.0
+max_value = 1e+08
+
+[node name="SeedSpinBox" type="SpinBox" parent="GUI"]
+offset_left = 416.0
+offset_top = 48.0
+offset_right = 499.062
+offset_bottom = 79.0
+max_value = 1e+09
+
+[node name="GenerateButton" type="Button" parent="GUI"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 104.0
+text = "Generate new system
+(Always click me twice)"
+
+[node name="Labels" type="HBoxContainer" parent="GUI"]
+offset_left = 16.0
+offset_top = 128.0
+offset_right = 143.0
+offset_bottom = 244.0
+
+[node name="NameLabels" type="VBoxContainer" parent="GUI/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "System ID: "
+
+[node name="StarType" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Type:"
+
+[node name="StarRadius" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Radius"
+
+[node name="StarMass" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Mass"
+
+[node name="Planets" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Planets:"
+
+[node name="DataLabels" type="VBoxContainer" parent="GUI/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarType" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarRadius" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarMass" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Planets" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetLabels" type="HBoxContainer" parent="GUI"]
+offset_left = 16.0
+offset_top = 368.0
+offset_right = 143.0
+offset_bottom = 514.0
+
+[node name="NameLabels" type="VBoxContainer" parent="GUI/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Radius:"
+
+[node name="OrbitalRadius" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Radius"
+
+[node name="OrbitalPeriod" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Period"
+
+[node name="Type" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Type:"
+
+[node name="DataLabels" type="VBoxContainer" parent="GUI/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalRadius" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalPeriod" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Type" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetSelect" type="SpinBox" parent="GUI"]
+offset_left = 128.0
+offset_top = 312.0
+offset_right = 211.062
+offset_bottom = 343.0
+max_value = 15.0
+
+[connection signal="value_changed" from="GUI/SeedSpinBox" to="." method="_on_seed_spin_box_value_changed"]
+[connection signal="pressed" from="GUI/GenerateButton" to="." method="_on_generate_button_pressed"]
+[connection signal="value_changed" from="GUI/PlanetSelect" to="." method="_on_planet_select_value_changed"]
