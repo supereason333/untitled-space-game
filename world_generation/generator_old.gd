@@ -89,7 +89,6 @@ func generate_satellite(is_moon: bool, planet_radius: int = 0):			# Generates a 
 	
 	if is_moon:		# Generates a standard moon
 		var radius := rnd.randi_range(planet_radius / 10, planet_radius / 4)
-		
 		return_satellite.radius
 	else:			# Some sort of orbiting structure
 		pass

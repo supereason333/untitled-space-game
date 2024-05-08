@@ -3,12 +3,32 @@ extends Node
 const GRAV_CONST := 0.0000000000667408
 
 var rnd = RandomNumberGenerator.new()
-
-func rnd_from_chance(input: float):			# chooses true/false from a chance. Input = 0.3 -> 30% to return true
-	if input < rnd.randf(): return false
-	else: return true
+var main_seed = 69699
 
 
-func exp_rndi_range(min: int, max: int):
-	max += 1
-	return int(rnd.randf_range(0, max) * rnd.randf_range(0, max) / max) + min
+func au_to_kilometer(distance: float):
+	return distance * 149597870
+
+
+func au_to_meter(distance: float):
+	return distance * 149597870000
+
+
+func solar_radius_to_kilometer(distance: float):
+	return distance * 695700
+
+
+func solar_radius_to_meter(distance: float):
+	return distance * 695700000
+
+
+func kilogram_to_solar_mass(mass: float):
+	return mass / (1.989 * pow(10, 30))
+
+
+func solar_mass_to_kilogram(mass: float):
+	return mass * (1.989 * pow(10, 30))
+
+
+func sphere_volume(radius: float):
+	return 4.0 / 3.0 * pow(radius, 3) * PI

@@ -1,35 +1,54 @@
 extends Node
 
 func _ready():
-	generate_system()
+	generate_system(0)
 
 @onready var output := $Output
 
-var rnd = RandomNumberGenerator.new()
+"""
+Distances:
+	between planets: AU
+	between moons: km
+Radii:
+	Stars: solar radius
+	planets: km
+	moons: km
+Mass:
+	Stars: Solar mass
+	planet: kg
+	moons: kg
+"""
+
+const PLANET_TYPE_STRING = ["Rocky", "Gas giant", "Gas dwarf", "Ice giant"]
+const PLANET_TYPE_RADIUS_RANGE = [[5000, 10000], [20000, 80000], [10000, 20000], [25000, 50000]]		# so [3][0] would get Ice giant min size
+
+const STAR_TYPE_STRING = ["Red giant", "White dwarf", "Neutron star", "Red dwarf"]
+const STAR_TYPE_RADIUS_RANGE = [[44.6, 445.6], [0.008, 0.02], [0.0000115, 0.00001437], [0.09, 0.15]]	# max and min radii of stars
+const STAR_TYPE_DENSITY = [0.0178314, 1000000000, 100000000000000000, 46824.6]
 
 var chance_generate_moons := 0.9
 
-func generate_system():			# Generates a whole new system
+var rnd = RandomNumberGenerator.new()
+
+
+func generate_system(system_id: int):			# Generates a whole new system
 	# Adds the system and star
 	output.add_child($BaseSystem.duplicate())
 	var system = output.get_child(0)
-	system.star_type = 0			# type of star generated
-	match system.star_type:
-		0:
-			system.star_radius = 1000000	# idk
-		1:
-			pass
-		2:
-			pass
-		_:
-			pass
+	
+	rnd.seed = hash(GlobalUtils.main_seed + system_id)
+	var begin_rnd_state = rnd.state
+	
+	system.star_type = rnd.randi_range(0, 3)			# type of star generated
+	system.star_radius = rnd.randf_range(STAR_TYPE_RADIUS_RANGE[system.star_type][0], STAR_TYPE_RADIUS_RANGE[system.star_type][1])
+	system.star_mass = GlobalUtils.kilogram_to_solar_mass(GlobalUtils.sphere_volume(GlobalUtils.solar_radius_to_meter(system.star_radius)) * STAR_TYPE_DENSITY[system.star_type])	# Mesured in kg
 	
 	# Adds the planets
 	var planet_amount := 0
-	if GlobalUtils.rnd_from_chance(0.2):					# Generates large system
+	if rnd_from_chance(0.2):					# Generates large system
 		planet_amount = rnd.randi_range(7, 12)
 		print_debug("Large system")
-	elif GlobalUtils.rnd_from_chance(0.3):					# Generates an extra small system
+	elif rnd_from_chance(0.3):					# Generates an extra small system
 		planet_amount = rnd.randi_range(1, 3)
 		print_debug("small system")
 	else:													# Regular sized system
@@ -37,26 +56,34 @@ func generate_system():			# Generates a whole new system
 		print_debug("medium system")
 	
 	for i in planet_amount:
-		system.add_child(generate_planet())
+		system.add_child(generate_planet(GlobalUtils.solar_mass_to_kilogram(system.star_mass)))
 	
+	# output things
+	"""print_debug("System seed: " + str(rnd.seed))
+	print_debug("Star radius: " + str(system.star_radius))
+	print_debug("Star type: " + STAR_TYPE_STRING[system.star_type])
+	print_debug("Star Mass: " + str(system.star_mass))
+	print_debug("Planet amount: " + str(planet_amount))"""
 
 
-func generate_planet():
+func generate_planet(parent_body_mass: float):	# Mass in kg
 	var planet = $BasePlanet.duplicate()
-	planet.type = 0			# sets type of planet
-	match planet.type:
-		0:
-			planet.radius = 100000
-		1:
-			pass
-		2:
-			pass
-		3:
-			pass
-		_:
-			pass
+	planet.type = rnd.randi_range(0, 3)			# sets type of planet
+	planet.radius = rnd.randf_range(PLANET_TYPE_RADIUS_RANGE[planet.type][0], PLANET_TYPE_RADIUS_RANGE[planet.type][1])	# generates radii based on planet type
+	planet.orbital_radius = rnd.randf_range(0.3, 20)
+	planet.orbital_period = sqrt(4 * pow(PI, 2) * pow(GlobalUtils.au_to_meter(planet.orbital_radius), 3) / (GlobalUtils.GRAV_CONST * parent_body_mass))
+	"""
+	print_debug(str(planet.orbital_period / 86400) + " days orbit period")
+	print_debug("Orbital radius : " + str(planet.orbital_radius))
+	"""
+	
 	return planet
 
 
 func generate_moon():
 	pass
+
+
+func rnd_from_chance(input: float):			# chooses true/false from a chance. Input = 0.3 -> 30% to return true
+	if input < rnd.randf(): return false
+	else: return true
