@@ -35,6 +35,13 @@ offset_right = 116.0
 offset_bottom = 338.0
 text = "Select Planet"
 
+[node name="jeepers creepers2" type="Label" parent="GUI"]
+offset_left = 1768.0
+offset_top = 16.0
+offset_right = 1868.0
+offset_bottom = 42.0
+text = "Time (day)"
+
 [node name="IDSpinBox" type="SpinBox" parent="GUI"]
 offset_left = 264.0
 offset_top = 48.0
@@ -160,6 +167,37 @@ offset_right = 211.062
 offset_bottom = 343.0
 max_value = 15.0
 
+[node name="TimeSelect" type="SpinBox" parent="GUI"]
+offset_left = 1768.0
+offset_top = 40.0
+offset_right = 1851.06
+offset_bottom = 71.0
+max_value = 1e+09
+step = 0.1
+
+[node name="DoSpin" type="CheckButton" parent="GUI"]
+offset_left = 1672.0
+offset_top = 40.0
+offset_right = 1753.0
+offset_bottom = 71.0
+text = "spin"
+
+[node name="TimeRateSelect" type="SpinBox" parent="GUI"]
+offset_left = 1768.0
+offset_top = 112.0
+offset_right = 1851.06
+offset_bottom = 143.0
+step = 0.1
+
+[node name="jeepers creepers3" type="Label" parent="GUI"]
+offset_left = 1768.0
+offset_top = 88.0
+offset_right = 1868.0
+offset_bottom = 114.0
+text = "Time rate"
+
 [connection signal="value_changed" from="GUI/SeedSpinBox" to="." method="_on_seed_spin_box_value_changed"]
 [connection signal="pressed" from="GUI/GenerateButton" to="." method="_on_generate_button_pressed"]
 [connection signal="value_changed" from="GUI/PlanetSelect" to="." method="_on_planet_select_value_changed"]
+[connection signal="value_changed" from="GUI/TimeSelect" to="." method="_on_time_select_value_changed"]
+[connection signal="value_changed" from="GUI/TimeRateSelect" to="." method="_on_time_select_value_changed"]
