@@ -4,6 +4,9 @@ extends Node2D
 @onready var result_system := $ResultSystem
 @onready var time_selector := $GUI/TimeSelect
 
+var zoom_scale := Vector2(1, 1)
+var centre := Vector2(0, 0)
+var panning := false
 var system
 var orbit_radius_scale := 30
 
@@ -14,7 +17,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if delta > 0.0095: print_debug(delta)
+	if delta > 0.01: print_debug(delta)
 	if $GUI/DoSpin.button_pressed:
 		time_selector.value += $GUI/TimeRateSelect.value
 
@@ -43,16 +46,16 @@ func _on_seed_spin_box_value_changed(value):
 
 
 func _draw():
-	for i in 10:
-		draw_arc(Vector2(0, 0), i * 2 * orbit_radius_scale, 0, 360, 360, Color(0.25, 0.25, 0.25))
-	draw_circle(Vector2(0, 0), 7, Color.WHITE)
+	for i in 20:
+		draw_arc(centre, i * orbit_radius_scale * zoom_scale.x * 2, 0, 360, 360, Color(0.35, 0.35, 0.35))
+	draw_circle(centre, 7, Color.WHITE)
 	if system:
 		system = result_system.get_child(0)
 		for node in system.get_children():
 			var rads = 2 * PI * (time_selector.value / (node.orbital_period / 86400))
 			var pos = Vector2(node.orbital_radius * orbit_radius_scale * sin(rads), node.orbital_radius * orbit_radius_scale * cos(rads))
-			draw_arc(Vector2(0, 0), node.orbital_radius * orbit_radius_scale, 0, 360, 360, Color.DIM_GRAY, 2)
-			draw_circle(pos, 3, Color.WHITE)
+			draw_arc(centre, node.orbital_radius * orbit_radius_scale * zoom_scale.x, 0, 360, 360, Color.DIM_GRAY, 2)
+			draw_circle(pos * zoom_scale + centre, 3, Color.WHITE)
 
 
 func _on_planet_select_value_changed(value):
@@ -66,5 +69,25 @@ func _on_planet_select_value_changed(value):
 		$GUI/PlanetLabels/DataLabels/Moons.text = str(planet.moons)
 
 
+func _unhandled_input(event):
+	if event is InputEventMouseMotion:
+		if panning:
+			centre += event.relative
+			queue_redraw()
+
+
 func _on_time_select_value_changed(value):
 	queue_redraw()
+
+
+func _on_zoom_slider_value_changed(value):
+	zoom_scale = Vector2(value, value)
+	queue_redraw()
+
+
+func _on_button_button_down():
+	panning = true
+
+
+func _on_button_button_up():
+	panning = false
