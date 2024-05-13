@@ -31,4 +31,4 @@ func solar_mass_to_kilogram(mass: float):
 
 
 func sphere_volume(radius: float):
-	return 4.0 / 3.0 * pow(radius, 3) * PI
+	return 4.0 / 3.0 * (radius ** 3) * PI

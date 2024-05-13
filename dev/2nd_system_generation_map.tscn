@@ -141,6 +141,10 @@ text = "Orbital Period"
 layout_mode = 2
 text = "Type:"
 
+[node name="Moons" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Moons:"
+
 [node name="DataLabels" type="VBoxContainer" parent="GUI/PlanetLabels"]
 layout_mode = 2
 
@@ -157,6 +161,10 @@ layout_mode = 2
 text = "data"
 
 [node name="Type" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Moons" type="Label" parent="GUI/PlanetLabels/DataLabels"]
 layout_mode = 2
 text = "data"
 

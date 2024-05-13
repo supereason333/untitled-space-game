@@ -42,6 +42,8 @@ func _on_seed_spin_box_value_changed(value):
 
 
 func _draw():
+	for i in 10:
+		draw_arc(Vector2(0, 0), i * 2 * orbit_radius_scale, 0, 360, 360, Color(0.25, 0.25, 0.25))
 	draw_circle(Vector2(0, 0), 7, Color.WHITE)
 	if system:
 		system = result_system.get_child(0)
@@ -60,6 +62,7 @@ func _on_planet_select_value_changed(value):
 		$GUI/PlanetLabels/DataLabels/OrbitalRadius.text = str(planet.orbital_radius) + " AU"
 		$GUI/PlanetLabels/DataLabels/OrbitalPeriod.text = str(planet.orbital_period / 86400) + " Days"
 		$GUI/PlanetLabels/DataLabels/Type.text = str(GeneratedIDs.PLANET_TYPE_STRING[planet.type])
+		$GUI/PlanetLabels/DataLabels/Moons.text = str(planet.moons)
 
 
 func _on_time_select_value_changed(value):
