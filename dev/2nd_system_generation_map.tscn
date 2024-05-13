@@ -54,7 +54,7 @@ offset_left = 416.0
 offset_top = 48.0
 offset_right = 499.062
 offset_bottom = 79.0
-max_value = 1e+09
+max_value = 1e+06
 
 [node name="GenerateButton" type="Button" parent="GUI"]
 offset_left = 16.0
@@ -203,6 +203,13 @@ offset_top = 88.0
 offset_right = 1868.0
 offset_bottom = 114.0
 text = "Time rate"
+
+[node name="SeedLabel" type="Label" parent="GUI"]
+offset_left = 552.0
+offset_top = 16.0
+offset_right = 633.0
+offset_bottom = 42.0
+text = "seed?"
 
 [connection signal="value_changed" from="GUI/SeedSpinBox" to="." method="_on_seed_spin_box_value_changed"]
 [connection signal="pressed" from="GUI/GenerateButton" to="." method="_on_generate_button_pressed"]

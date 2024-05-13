@@ -107,8 +107,6 @@ func generate_system(system_id: int):			# Generates a whole new system
 		for r in i:
 			system.add_child(generate_planet(system.star_mass, planet_id, ave_dist, spread))
 			planet_id += 1
-	
-	print_debug(planet_groups)
 	# Sorts the planets in order
 	# working on it
 	
@@ -175,5 +173,5 @@ func scatter_array(input, amount: int):
 	return input
 
 func lag():
-	for i in 10000:
+	for i in 1000000:
 		var among_us = tan(cos(i)) ** 0.32

@@ -3,7 +3,11 @@ extends Node
 const GRAV_CONST := 0.0000000000667408
 
 var rnd = RandomNumberGenerator.new()
-var main_seed = 6969
+var main_seed := 0
+
+
+func _ready():
+	main_seed = rnd.seed
 
 
 func au_to_kilometer(distance: float):

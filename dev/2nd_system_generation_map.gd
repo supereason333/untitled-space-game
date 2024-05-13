@@ -9,11 +9,12 @@ var orbit_radius_scale := 30
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$GUI/SeedLabel.text = str(GlobalUtils.main_seed)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if delta > 0.0095: print_debug(delta)
 	if $GUI/DoSpin.button_pressed:
 		time_selector.value += $GUI/TimeRateSelect.value
 
