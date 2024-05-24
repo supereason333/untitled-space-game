@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxw5oot32ruc2"]
+
+[ext_resource type="Script" path="res://player/player_fighter.gd" id="1_pjm5k"]
+[ext_resource type="PackedScene" uid="uid://c6i4ycj63xxdd" path="res://player/ship_gui.tscn" id="2_c6lfx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pj2ue"]
+size = Vector3(1, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x61hm"]
+size = Vector3(1, 1, 1.98)
+
+[node name="RigidBody3D" type="RigidBody3D" groups=["player"]]
+gravity_scale = 2.66454e-15
+linear_damp = 2.0
+angular_damp = 2.0
+script = ExtResource("1_pjm5k")
+
+[node name="Ship" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_pj2ue")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15443, 2.07098)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_x61hm")
+
+[node name="ship_gui" parent="." instance=ExtResource("2_c6lfx")]

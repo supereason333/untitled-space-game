@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6i4ycj63xxdd"]
+
+[ext_resource type="Script" path="res://player/ship_gui.gd" id="1_1rtex"]
+
+[node name="ship_gui" type="CanvasLayer"]
+script = ExtResource("1_1rtex")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "This is the ship gui"

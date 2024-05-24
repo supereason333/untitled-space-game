@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdr1yie437f0x"]
+
+[ext_resource type="Script" path="res://menus/main/settings.gd" id="1_sishg"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sishg")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 112.0
+text = "back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

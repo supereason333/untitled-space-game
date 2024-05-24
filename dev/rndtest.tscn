@@ -4,18 +4,20 @@
 script/source = "extends Node
 
 var rnd = RandomNumberGenerator.new()
-var result = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+var num1 = 0.0
+var num2 = 10.0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for i in 1000:
-		result[round(rnd.randfn(2, 0.5))] += 1
-	print_debug(result)
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if num1 != num2: 
+		num1 = move_toward(num1, num2, num2/100)
+		print_debug(num1)
 "
 
 [node name="Node" type="Node"]

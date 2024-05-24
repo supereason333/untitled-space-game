@@ -35,7 +35,7 @@ func _process(_delta):
 
 "
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_uu34u")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -65,3 +65,5 @@ text = "This is the GUI"
 [node name="Center" type="Marker2D" parent="GUI"]
 position = Vector2(960, 540)
 gizmo_extents = 181.2
+
+[node name="LightSource" type="OmniLight3D" parent="."]

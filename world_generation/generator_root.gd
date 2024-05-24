@@ -5,9 +5,7 @@ func _ready():
 	#generate_system(0)
 	#for i in 10:
 	#	generate_system(i)
-	lag()
 	pass
-
 
 """
 Distances:
@@ -26,6 +24,7 @@ Density:
 volume:
 	all: m^3
 """
+
 								# ["Rocky", "Gas giant", "Gas dwarf", "Ice giant"]
 const PLANET_TYPE_RADIUS_RANGE = [[5000, 10000], [20000, 80000], [10000, 20000], [25000, 50000]]		# so [3][0] would get Ice giant min size
 const PLANET_TYPE_DENSITY = [5500, 1200, 2000, 2500]	# ice giant density is a guess
@@ -171,7 +170,3 @@ func scatter_array(input, amount: int):
 			input[a] -= 1
 			input[b] += 1
 	return input
-
-func lag():
-	for i in 1000000:
-		var among_us = tan(cos(i)) ** 0.32

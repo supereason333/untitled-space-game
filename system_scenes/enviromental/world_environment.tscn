@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://w7syeat2uu48"]
+
+[ext_resource type="Texture2D" uid="uid://bousres65o8n2" path="res://resources/bg_pictures/DSC_5098.jpeg" id="1_ef63f"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_cwaqb"]
+panorama = ExtResource("1_ef63f")
+
+[sub_resource type="Sky" id="Sky_abxgh"]
+sky_material = SubResource("PanoramaSkyMaterial_cwaqb")
+
+[sub_resource type="Environment" id="Environment_c1l6k"]
+background_mode = 2
+sky = SubResource("Sky_abxgh")
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_38w3d"]
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_c1l6k")
+camera_attributes = SubResource("CameraAttributesPractical_38w3d")

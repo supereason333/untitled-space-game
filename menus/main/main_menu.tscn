@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://hfd73wbs3oe0"]
+
+[ext_resource type="Script" path="res://menus/main/main_menu.gd" id="1_4k88n"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4k88n")
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayButton" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 440.0
+offset_right = 384.0
+offset_bottom = 568.0
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 672.0
+offset_right = 384.0
+offset_bottom = 800.0
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 1536.0
+offset_top = 896.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 64.0
+offset_right = 430.0
+offset_bottom = 90.0
+text = "Untitled space game"
+
+[connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Buttons/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Buttons/QuitButton" to="." method="_on_quit_button_pressed"]

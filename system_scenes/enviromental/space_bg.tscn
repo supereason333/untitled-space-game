@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx8m1r1yfskd3"]
+
+[ext_resource type="PackedScene" uid="uid://w7syeat2uu48" path="res://system_scenes/enviromental/world_environment.tscn" id="1_fpdw1"]
+[ext_resource type="Script" path="res://system_scenes/enviromental/space_bg.gd" id="1_qv22r"]
+[ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="2_idakl"]
+
+[sub_resource type="GDScript" id="GDScript_nb4xh"]
+script/source = "extends Camera3D
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	GlobalSignals.connect(\"camera_rotated\", camera_rot)
+
+
+func camera_rot(rot: Vector3):
+	rotation = rot
+"
+
+[node name="SpaceBG" type="Node3D"]
+script = ExtResource("1_qv22r")
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("1_fpdw1")]
+
+[node name="SunLight" parent="." instance=ExtResource("2_idakl")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+script = SubResource("GDScript_nb4xh")

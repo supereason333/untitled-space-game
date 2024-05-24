@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://8p5e70braiye"]
+
+[ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="1_b66ax"]
+[ext_resource type="PackedScene" uid="uid://dxw5oot32ruc2" path="res://player/player_fighter.tscn" id="2_4wicy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hjcar"]
+size = Vector3(10, 0.01, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gks3n"]
+size = Vector3(10, 0.1, 10)
+
+[node name="PlanetOrbit" type="Node3D"]
+
+[node name="SunLight" parent="." instance=ExtResource("1_b66ax")]
+transform = Transform3D(1, 0, 0, 0, 0.92647, 0.37637, 0, -0.37637, 0.92647, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_hjcar")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_gks3n")
+
+[node name="PlayerFighter" parent="." instance=ExtResource("2_4wicy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.326781, 3.85691, -0.386214)
