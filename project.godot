@@ -21,6 +21,7 @@ GlobalUtils="*res://global/global_utils.gd"
 GeneratedIDs="*res://world_generation/generate_ids.gd"
 GlobalSignals="*res://global/global_signals.gd"
 SaverLoader="*res://saver_loader/saver_loader.gd"
+SystemGenerator="*res://world_generation/generator_root.gd"
 
 [debug]
 

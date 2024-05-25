@@ -1,17 +1,18 @@
 extends Node2D
 
-@onready var generator := $GeneratorRoot
-@onready var result_system := $ResultSystem
 @onready var time_selector := $GUI/TimeSelect
+var save_path := "res://saver_loader/saves/testworld.tres"
 
 var zoom_scale := Vector2(1, 1)
 var centre := Vector2(0, 0)
 var panning := false
-var system
+var system:GeneratedSystem
 var orbit_radius_scale := 30
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if FileAccess.file_exists(save_path):
+		system = ResourceLoader.load(save_path)
 	$GUI/SeedLabel.text = str(GlobalUtils.main_seed)
 
 
@@ -22,13 +23,9 @@ func _process(delta):
 		time_selector.value += $GUI/TimeRateSelect.value
 
 func _on_generate_button_pressed():
-	if result_system.get_child_count() != 0:
-		for i in result_system.get_children():
-			i.queue_free()
-	result_system.add_child(generator.generate_system($GUI/IDSpinBox.value))
-	system = result_system.get_child(0)
+	system = SystemGenerator.generate_save_system($GUI/IDSpinBox.value, save_path)
 	
-	var planets = system.get_child_count()
+	var planets = system.planets.size()
 	$GUI/Labels/DataLabels/SystemId.text = str(system.system_id)
 	$GUI/Labels/DataLabels/StarType.text = str(GeneratedIDs.STAR_TYPE_STRING[system.star_type])
 	$GUI/Labels/DataLabels/StarRadius.text = str(system.star_radius) + " (Solar radius)"
@@ -46,27 +43,25 @@ func _on_seed_spin_box_value_changed(value):
 
 
 func _draw():
-	for i in 20:
-		draw_arc(centre, i * orbit_radius_scale * zoom_scale.x * 2, 0, 360, 360, Color(0.35, 0.35, 0.35))
-	draw_circle(centre, 7, Color.WHITE)
 	if system:
-		system = result_system.get_child(0)
-		for node in system.get_children():
-			var rads = 2 * PI * (time_selector.value / (node.orbital_period / 86400))
-			var pos = Vector2(node.orbital_radius * orbit_radius_scale * sin(rads), node.orbital_radius * orbit_radius_scale * cos(rads))
-			draw_arc(centre, node.orbital_radius * orbit_radius_scale * zoom_scale.x, 0, 360, 360, Color.DIM_GRAY, 2)
+		for i in 20:
+			draw_arc(centre, i * orbit_radius_scale * zoom_scale.x * 2, 0, 360, 360, Color(0.35, 0.35, 0.35))
+		draw_circle(centre, 7, Color.WHITE)
+		for planet in system.planets:
+			var rads = 2 * PI * (time_selector.value / (planet.orbital_period / 86400))
+			var pos = Vector2(planet.orbital_radius * orbit_radius_scale * sin(rads), planet.orbital_radius * orbit_radius_scale * cos(rads))
+			draw_arc(centre, planet.orbital_radius * orbit_radius_scale * zoom_scale.x, 0, 360, 360, Color.DIM_GRAY, 2)
 			draw_circle(pos * zoom_scale + centre, 3, Color.WHITE)
 
 
 func _on_planet_select_value_changed(value):
 	if system:
-		system = result_system.get_child(0)
-		var planet = system.get_child($GUI/PlanetSelect.value)
+		var planet = system.planets[$GUI/PlanetSelect.value]
 		$GUI/PlanetLabels/DataLabels/Radius.text = str(planet.radius)
 		$GUI/PlanetLabels/DataLabels/OrbitalRadius.text = str(planet.orbital_radius) + " AU"
 		$GUI/PlanetLabels/DataLabels/OrbitalPeriod.text = str(planet.orbital_period / 86400) + " Days"
 		$GUI/PlanetLabels/DataLabels/Type.text = str(GeneratedIDs.PLANET_TYPE_STRING[planet.type])
-		$GUI/PlanetLabels/DataLabels/Moons.text = str(planet.moons)
+		$GUI/PlanetLabels/DataLabels/Moons.text = str(planet.moons.size())
 
 
 func _unhandled_input(event):

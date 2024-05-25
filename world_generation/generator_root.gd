@@ -2,7 +2,7 @@ extends Node
 
 func _ready():
 	#add_sibling.call_deferred(generate_system(0))
-	#generate_system(0)
+	#generate_save_system("res://saver_loader/saves/testworld.tres", 0)
 	#for i in 10:
 	#	generate_system(i)
 	pass
@@ -37,10 +37,17 @@ var chance_generate_moons := 0.9
 var rnd = RandomNumberGenerator.new()
 var rnd_p = RandomNumberGenerator.new()
 
+func generate_save_system(system_id: int, save_path: String):
+	var system = generate_system(system_id)
+	
+	ResourceSaver.save(system, save_path)
+	
+	return system
+
 
 func generate_system(system_id: int):			# Generates a whole new system
 	# Adds the system and star
-	var system = $BaseSystem.duplicate()
+	var system = GeneratedSystem.new()
 	
 	rnd.seed = hash(hash(GlobalUtils.main_seed) + hash(system_id))
 	var begin_rnd_state = rnd.state
@@ -103,8 +110,9 @@ func generate_system(system_id: int):			# Generates a whole new system
 		else:					# ave group
 			ave_dist = rnd.randfn(4, 3)
 		spread = ave_dist / 1.5
+		
 		for r in i:
-			system.add_child(generate_planet(system.star_mass, planet_id, ave_dist, spread))
+			system.planets.append(generate_planet(system.star_mass, planet_id, ave_dist, spread))
 			planet_id += 1
 	# Sorts the planets in order
 	# working on it
@@ -123,7 +131,7 @@ func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, 
 	rnd_p.seed = hash(hash(planet_id) + hash(GlobalUtils.main_seed))
 	var begin_state = rnd_p.state
 	
-	var planet := $BasePlanet.duplicate()
+	var planet := GeneratedPlanet.new()
 	var moon_mult := 1.0
 	
 	planet.type = rnd_p.randi_range(0, 3)			# sets type of planet
@@ -135,14 +143,14 @@ func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, 
 	
 	moon_mult = planet.radius / 3000
 	if rnd_from_chance(chance_generate_moons):
-		planet.moons = int(rnd_p.randfn(5 * moon_mult, 1))
-		if planet.moons < 0:
-			planet.moons = 0
+		planet.moon_amount = int(rnd_p.randfn(5 * moon_mult, 1))
+		if planet.moon_amount < 0:
+			planet.moon_amount = 0
 	else:
-		planet.moons = 0
+		planet.moon_amount = 0
 	
-	for i in planet.moons:
-		planet.add_child(generate_moon(false, planet.mass))
+	for i in planet.moon_amount:
+		planet.moons.append(generate_moon(false, planet.mass))
 	
 	"""
 	print_debug(str(planet.orbital_period / 86400) + " days orbit period")
@@ -153,7 +161,7 @@ func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, 
 
 
 func generate_moon(big_moon: bool, parent_body_mass: float):
-	var moon = $BaseMoon.duplicate()
+	var moon := GeneratedMoon.new()
 	return moon
 
 

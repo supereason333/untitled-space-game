@@ -57,7 +57,7 @@ offset_top = 16.0
 offset_right = 240.0
 offset_bottom = 104.0
 text = "Generate new system
-(only one click requred)"
+(Always click me twice)"
 
 [node name="Labels" type="HBoxContainer" parent="GUI"]
 offset_left = 16.0

@@ -1,0 +1,3228 @@
+[gd_resource type="Resource" script_class="GeneratedSystem" load_steps=360 format=3 uid="uid://b2vly5pmuu7ld"]
+
+[ext_resource type="Script" path="res://world_generation/resources/generated_moon.gd" id="1_viqt2"]
+[ext_resource type="Script" path="res://world_generation/resources/generated_planet.gd" id="2_n7osn"]
+[ext_resource type="Script" path="res://world_generation/resources/generated_system.gd" id="3_8atly"]
+
+[sub_resource type="Resource" id="Resource_hfeui"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ryjkb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ni032"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hbe8f"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ro0tq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_emuem"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v12j8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1pog3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nnaa4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lhejj"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rsbo1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_shrup"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_w6biv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1g0tp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ho4hv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wvjtx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ww54f"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v640n"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_itsr8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5e3ua"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_udbxe"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2n87d"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vxhvr"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5k6co"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_40lfw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vqf8n"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_drgyx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_8xjj4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lhvut"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tj3qt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ptu4d"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ygmnx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_bsjlg"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_c7hkf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_shp3w"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6yn8d"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ovv2s"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2dtd7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jgddy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_31m6a"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ux013"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0vt7f"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tydxu"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_w0qpd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_u5qfh"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tytg5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_xgyct"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4raw4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vwp8f"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_f8a5t"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_i8bin"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qs8r1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7junp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ledd5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_03hvc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ds0hk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_yoaq1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ocjnx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_m3u4g"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_cwxtd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_xq3gx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5d65q"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tvgq5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jgb65"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_38rc8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_quo85"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tyvn8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7y1ge"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dy8dq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v3rq0"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wkfmf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_x8si5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1jpte"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lxnf6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_u2h8j"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_isv8f"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_q2gpt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_aesjy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lb4so"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wvt3v"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_be53q"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ahh31"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_s51bs"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_af335"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0yjp8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0ig4t"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_osls4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0j1y3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_cg3in"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v6gh2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_c5k7t"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5c220"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7enf8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5axtc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_fvcu1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_uh3c5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ouwrt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_x8ibv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4jb01"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_q2e7p"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j242e"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_f5gyh"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_f3vys"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_t31ox"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_fvgve"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j17ys"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ak6ea"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7s8qt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_p4p0l"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_pgwrb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_n25n3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lpo7n"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5v8my"]
+script = ExtResource("2_n7osn")
+radius = 67649.9
+orbital_radius = 0.694115
+orbital_period = 1.17953e+07
+type = 1
+moon_amount = 112
+mass = 1.55622e+18
+volume = 1.29685e+15
+moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_hfeui"), SubResource("Resource_ryjkb"), SubResource("Resource_ni032"), SubResource("Resource_hbe8f"), SubResource("Resource_ro0tq"), SubResource("Resource_emuem"), SubResource("Resource_v12j8"), SubResource("Resource_1pog3"), SubResource("Resource_nnaa4"), SubResource("Resource_lhejj"), SubResource("Resource_rsbo1"), SubResource("Resource_shrup"), SubResource("Resource_w6biv"), SubResource("Resource_1g0tp"), SubResource("Resource_ho4hv"), SubResource("Resource_wvjtx"), SubResource("Resource_ww54f"), SubResource("Resource_v640n"), SubResource("Resource_itsr8"), SubResource("Resource_5e3ua"), SubResource("Resource_udbxe"), SubResource("Resource_2n87d"), SubResource("Resource_vxhvr"), SubResource("Resource_5k6co"), SubResource("Resource_40lfw"), SubResource("Resource_vqf8n"), SubResource("Resource_drgyx"), SubResource("Resource_8xjj4"), SubResource("Resource_lhvut"), SubResource("Resource_tj3qt"), SubResource("Resource_ptu4d"), SubResource("Resource_ygmnx"), SubResource("Resource_bsjlg"), SubResource("Resource_c7hkf"), SubResource("Resource_shp3w"), SubResource("Resource_6yn8d"), SubResource("Resource_ovv2s"), SubResource("Resource_2dtd7"), SubResource("Resource_jgddy"), SubResource("Resource_31m6a"), SubResource("Resource_ux013"), SubResource("Resource_0vt7f"), SubResource("Resource_tydxu"), SubResource("Resource_w0qpd"), SubResource("Resource_u5qfh"), SubResource("Resource_tytg5"), SubResource("Resource_xgyct"), SubResource("Resource_4raw4"), SubResource("Resource_vwp8f"), SubResource("Resource_f8a5t"), SubResource("Resource_i8bin"), SubResource("Resource_qs8r1"), SubResource("Resource_7junp"), SubResource("Resource_ledd5"), SubResource("Resource_03hvc"), SubResource("Resource_ds0hk"), SubResource("Resource_yoaq1"), SubResource("Resource_ocjnx"), SubResource("Resource_m3u4g"), SubResource("Resource_cwxtd"), SubResource("Resource_xq3gx"), SubResource("Resource_5d65q"), SubResource("Resource_tvgq5"), SubResource("Resource_jgb65"), SubResource("Resource_38rc8"), SubResource("Resource_quo85"), SubResource("Resource_tyvn8"), SubResource("Resource_7y1ge"), SubResource("Resource_dy8dq"), SubResource("Resource_v3rq0"), SubResource("Resource_wkfmf"), SubResource("Resource_x8si5"), SubResource("Resource_1jpte"), SubResource("Resource_lxnf6"), SubResource("Resource_u2h8j"), SubResource("Resource_isv8f"), SubResource("Resource_q2gpt"), SubResource("Resource_aesjy"), SubResource("Resource_lb4so"), SubResource("Resource_wvt3v"), SubResource("Resource_be53q"), SubResource("Resource_ahh31"), SubResource("Resource_s51bs"), SubResource("Resource_af335"), SubResource("Resource_0yjp8"), SubResource("Resource_0ig4t"), SubResource("Resource_osls4"), SubResource("Resource_0j1y3"), SubResource("Resource_cg3in"), SubResource("Resource_v6gh2"), SubResource("Resource_c5k7t"), SubResource("Resource_5c220"), SubResource("Resource_7enf8"), SubResource("Resource_5axtc"), SubResource("Resource_fvcu1"), SubResource("Resource_uh3c5"), SubResource("Resource_ouwrt"), SubResource("Resource_x8ibv"), SubResource("Resource_4jb01"), SubResource("Resource_q2e7p"), SubResource("Resource_j242e"), SubResource("Resource_f5gyh"), SubResource("Resource_f3vys"), SubResource("Resource_t31ox"), SubResource("Resource_fvgve"), SubResource("Resource_j17ys"), SubResource("Resource_ak6ea"), SubResource("Resource_7s8qt"), SubResource("Resource_p4p0l"), SubResource("Resource_pgwrb"), SubResource("Resource_n25n3"), SubResource("Resource_lpo7n")])
+
+[sub_resource type="Resource" id="Resource_hbgu6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v4cat"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2re6a"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_t5m6d"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0hxph"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wruj6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dvhd5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_r2otv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6gy3w"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_epect"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_i3xsp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_yjvb2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rqnq8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_3ubsd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nnf75"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_x47pn"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ttlyy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_g0mv4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1jhl7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_c368i"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_m070p"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jwvkc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_p4tei"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tf5f4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_d6bd2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vw308"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nsp3g"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dyfym"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6l0b2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qyckm"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_u5irp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_k61c8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_34o2j"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_kti4l"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_x51bo"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_kxy07"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_cdb8r"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_t4xhy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0pklu"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6mqm2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_a1e32"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_23jis"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_firk0"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lur5r"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_epdpm"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hbtkk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_3j8v6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5al2g"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_a52qi"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2lsqj"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ah54r"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ci4h7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_c00j6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5gds7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_42oap"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hqj6v"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rhddk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_evs62"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jsygw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qn5ec"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4q5n4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hb7gk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2dbir"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_aog74"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6by4s"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_niueu"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vqax8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lpmq3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jtd4g"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1la7a"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7q6ov"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_sycpf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5a22y"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_yacqp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_k1h8m"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_gj813"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7rhib"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_g7qt5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jyo6i"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_u31uj"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_f6b0h"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_m4xp1"]
+script = ExtResource("2_n7osn")
+radius = 49378.4
+orbital_radius = 5.74312
+orbital_period = 2.80727e+08
+type = 3
+moon_amount = 81
+mass = 1.26078e+18
+volume = 5.04311e+14
+moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_hbgu6"), SubResource("Resource_v4cat"), SubResource("Resource_2re6a"), SubResource("Resource_t5m6d"), SubResource("Resource_0hxph"), SubResource("Resource_wruj6"), SubResource("Resource_dvhd5"), SubResource("Resource_r2otv"), SubResource("Resource_6gy3w"), SubResource("Resource_epect"), SubResource("Resource_i3xsp"), SubResource("Resource_yjvb2"), SubResource("Resource_rqnq8"), SubResource("Resource_3ubsd"), SubResource("Resource_nnf75"), SubResource("Resource_x47pn"), SubResource("Resource_ttlyy"), SubResource("Resource_g0mv4"), SubResource("Resource_1jhl7"), SubResource("Resource_c368i"), SubResource("Resource_m070p"), SubResource("Resource_jwvkc"), SubResource("Resource_p4tei"), SubResource("Resource_tf5f4"), SubResource("Resource_d6bd2"), SubResource("Resource_vw308"), SubResource("Resource_nsp3g"), SubResource("Resource_dyfym"), SubResource("Resource_6l0b2"), SubResource("Resource_qyckm"), SubResource("Resource_u5irp"), SubResource("Resource_k61c8"), SubResource("Resource_34o2j"), SubResource("Resource_kti4l"), SubResource("Resource_x51bo"), SubResource("Resource_kxy07"), SubResource("Resource_cdb8r"), SubResource("Resource_t4xhy"), SubResource("Resource_0pklu"), SubResource("Resource_6mqm2"), SubResource("Resource_a1e32"), SubResource("Resource_23jis"), SubResource("Resource_firk0"), SubResource("Resource_lur5r"), SubResource("Resource_epdpm"), SubResource("Resource_hbtkk"), SubResource("Resource_3j8v6"), SubResource("Resource_5al2g"), SubResource("Resource_a52qi"), SubResource("Resource_2lsqj"), SubResource("Resource_ah54r"), SubResource("Resource_ci4h7"), SubResource("Resource_c00j6"), SubResource("Resource_5gds7"), SubResource("Resource_42oap"), SubResource("Resource_hqj6v"), SubResource("Resource_rhddk"), SubResource("Resource_evs62"), SubResource("Resource_jsygw"), SubResource("Resource_qn5ec"), SubResource("Resource_4q5n4"), SubResource("Resource_hb7gk"), SubResource("Resource_2dbir"), SubResource("Resource_aog74"), SubResource("Resource_6by4s"), SubResource("Resource_niueu"), SubResource("Resource_vqax8"), SubResource("Resource_lpmq3"), SubResource("Resource_jtd4g"), SubResource("Resource_1la7a"), SubResource("Resource_7q6ov"), SubResource("Resource_sycpf"), SubResource("Resource_5a22y"), SubResource("Resource_yacqp"), SubResource("Resource_k1h8m"), SubResource("Resource_gj813"), SubResource("Resource_7rhib"), SubResource("Resource_g7qt5"), SubResource("Resource_jyo6i"), SubResource("Resource_u31uj"), SubResource("Resource_f6b0h")])
+
+[sub_resource type="Resource" id="Resource_04jos"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vdtqc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_diayb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nte8m"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_kkkqo"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hp8kf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_capwd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6xb52"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_y1ga7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_halss"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rg5ga"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2y23p"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hqjjc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hxg5p"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jwoiq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_sk5t7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_afpki"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_m0y10"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_axssv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4ggbv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0h1kq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hdwoe"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0opgs"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7nl61"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_c2a1h"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_7x81q"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vo5pu"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rmw48"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lb0b4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rbvap"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_083kw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jkqbo"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5fs6g"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_18tkb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_yylby"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_gopbx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_8cnth"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_eochd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6045c"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dueqk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rl063"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_y1wak"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ewfts"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_po772"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0dyj5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_luqf7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_s6puc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_08jk0"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vrucx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_l4lgo"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2jvay"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ag1mk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vqxy1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hljrc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5pohb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6dibh"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j7e86"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_86v1r"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_knbn6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_r6r2c"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_y1fw4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wu7ar"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dguke"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_uolb1"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j7jab"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wx1uc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ydu5u"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qi0l5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0borf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_8bar8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jbqq7"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ac7c5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_s4l8y"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vux7y"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_awvkb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jd5vw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tp4dc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_xerla"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_e1p3i"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_w40b5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5hfds"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dqr4r"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2hk3l"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_3uk2b"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rub8b"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_i44y4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j7m0b"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rdrr8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_s4pjw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_oe1k4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2gh0j"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_85t55"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_mb0gj"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_br5jj"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_t7kxt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_i21gf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_wsfxo"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4sqvq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hm1is"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_w4trw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nu0y2"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_j51id"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qmygw"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_us1fy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rq47t"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tubgr"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_qqac6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ssauv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_8mrya"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jntv4"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1lb0q"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ms6i8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_b5wft"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_gmayc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_hvn04"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5l1an"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_fslt5"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_r1dmv"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ejh5y"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_a0eb8"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_lgg1f"]
+script = ExtResource("2_n7osn")
+radius = 71517.3
+orbital_radius = 3.0789
+orbital_period = 1.10194e+08
+type = 1
+moon_amount = 120
+mass = 1.83867e+18
+volume = 1.53222e+15
+moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_04jos"), SubResource("Resource_vdtqc"), SubResource("Resource_diayb"), SubResource("Resource_nte8m"), SubResource("Resource_kkkqo"), SubResource("Resource_hp8kf"), SubResource("Resource_capwd"), SubResource("Resource_6xb52"), SubResource("Resource_y1ga7"), SubResource("Resource_halss"), SubResource("Resource_rg5ga"), SubResource("Resource_2y23p"), SubResource("Resource_hqjjc"), SubResource("Resource_hxg5p"), SubResource("Resource_jwoiq"), SubResource("Resource_sk5t7"), SubResource("Resource_afpki"), SubResource("Resource_m0y10"), SubResource("Resource_axssv"), SubResource("Resource_4ggbv"), SubResource("Resource_0h1kq"), SubResource("Resource_hdwoe"), SubResource("Resource_0opgs"), SubResource("Resource_7nl61"), SubResource("Resource_c2a1h"), SubResource("Resource_7x81q"), SubResource("Resource_vo5pu"), SubResource("Resource_rmw48"), SubResource("Resource_lb0b4"), SubResource("Resource_rbvap"), SubResource("Resource_083kw"), SubResource("Resource_jkqbo"), SubResource("Resource_5fs6g"), SubResource("Resource_18tkb"), SubResource("Resource_yylby"), SubResource("Resource_gopbx"), SubResource("Resource_8cnth"), SubResource("Resource_eochd"), SubResource("Resource_6045c"), SubResource("Resource_dueqk"), SubResource("Resource_rl063"), SubResource("Resource_y1wak"), SubResource("Resource_ewfts"), SubResource("Resource_po772"), SubResource("Resource_0dyj5"), SubResource("Resource_luqf7"), SubResource("Resource_s6puc"), SubResource("Resource_08jk0"), SubResource("Resource_vrucx"), SubResource("Resource_l4lgo"), SubResource("Resource_2jvay"), SubResource("Resource_ag1mk"), SubResource("Resource_vqxy1"), SubResource("Resource_hljrc"), SubResource("Resource_5pohb"), SubResource("Resource_6dibh"), SubResource("Resource_j7e86"), SubResource("Resource_86v1r"), SubResource("Resource_knbn6"), SubResource("Resource_r6r2c"), SubResource("Resource_y1fw4"), SubResource("Resource_wu7ar"), SubResource("Resource_dguke"), SubResource("Resource_uolb1"), SubResource("Resource_j7jab"), SubResource("Resource_wx1uc"), SubResource("Resource_ydu5u"), SubResource("Resource_qi0l5"), SubResource("Resource_0borf"), SubResource("Resource_8bar8"), SubResource("Resource_jbqq7"), SubResource("Resource_ac7c5"), SubResource("Resource_s4l8y"), SubResource("Resource_vux7y"), SubResource("Resource_awvkb"), SubResource("Resource_jd5vw"), SubResource("Resource_tp4dc"), SubResource("Resource_xerla"), SubResource("Resource_e1p3i"), SubResource("Resource_w40b5"), SubResource("Resource_5hfds"), SubResource("Resource_dqr4r"), SubResource("Resource_2hk3l"), SubResource("Resource_3uk2b"), SubResource("Resource_rub8b"), SubResource("Resource_i44y4"), SubResource("Resource_j7m0b"), SubResource("Resource_rdrr8"), SubResource("Resource_s4pjw"), SubResource("Resource_oe1k4"), SubResource("Resource_2gh0j"), SubResource("Resource_85t55"), SubResource("Resource_mb0gj"), SubResource("Resource_br5jj"), SubResource("Resource_t7kxt"), SubResource("Resource_i21gf"), SubResource("Resource_wsfxo"), SubResource("Resource_4sqvq"), SubResource("Resource_hm1is"), SubResource("Resource_w4trw"), SubResource("Resource_nu0y2"), SubResource("Resource_j51id"), SubResource("Resource_qmygw"), SubResource("Resource_us1fy"), SubResource("Resource_rq47t"), SubResource("Resource_tubgr"), SubResource("Resource_qqac6"), SubResource("Resource_ssauv"), SubResource("Resource_8mrya"), SubResource("Resource_jntv4"), SubResource("Resource_1lb0q"), SubResource("Resource_ms6i8"), SubResource("Resource_b5wft"), SubResource("Resource_gmayc"), SubResource("Resource_hvn04"), SubResource("Resource_5l1an"), SubResource("Resource_fslt5"), SubResource("Resource_r1dmv"), SubResource("Resource_ejh5y"), SubResource("Resource_a0eb8")])
+
+[sub_resource type="Resource" id="Resource_41x6a"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_du22c"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_nh4tg"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5x6cf"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_xlloy"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ti626"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_84nvt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_8c0ac"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_6nbo6"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_gu2uc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_mj1fx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ywyyx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_4bg6s"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_d5joc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_vvyv0"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_0eyjc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_cvt0w"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_v0otx"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_42uyd"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jil3g"]
+script = ExtResource("2_n7osn")
+radius = 11992.6
+orbital_radius = 3.52274
+orbital_period = 1.3486e+08
+type = 2
+moon_amount = 19
+mass = 1.44497e+16
+volume = 7.22484e+12
+moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_41x6a"), SubResource("Resource_du22c"), SubResource("Resource_nh4tg"), SubResource("Resource_5x6cf"), SubResource("Resource_xlloy"), SubResource("Resource_ti626"), SubResource("Resource_84nvt"), SubResource("Resource_8c0ac"), SubResource("Resource_6nbo6"), SubResource("Resource_gu2uc"), SubResource("Resource_mj1fx"), SubResource("Resource_ywyyx"), SubResource("Resource_4bg6s"), SubResource("Resource_d5joc"), SubResource("Resource_vvyv0"), SubResource("Resource_0eyjc"), SubResource("Resource_cvt0w"), SubResource("Resource_v0otx"), SubResource("Resource_42uyd")])
+
+[sub_resource type="Resource" id="Resource_sm475"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_dqgxp"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_rdw3a"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_re8aq"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_70cb3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_osj55"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_a3xpk"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ojldh"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_ph0by"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_eff5b"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_jpjcc"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_q24br"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_1166h"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_i412c"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5uceb"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_xce12"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_5lvs3"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_snf3o"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_tj5gt"]
+script = ExtResource("1_viqt2")
+radius = 0.0
+orbital_radius = 0.0
+orbital_period = 0.0
+type = 0
+mass = 0.0
+volume = 0.0
+
+[sub_resource type="Resource" id="Resource_2de5k"]
+script = ExtResource("2_n7osn")
+radius = 11886.5
+orbital_radius = 0.278406
+orbital_period = 2.99627e+06
+type = 2
+moon_amount = 19
+mass = 1.40695e+16
+volume = 7.03476e+12
+moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_sm475"), SubResource("Resource_dqgxp"), SubResource("Resource_rdw3a"), SubResource("Resource_re8aq"), SubResource("Resource_70cb3"), SubResource("Resource_osj55"), SubResource("Resource_a3xpk"), SubResource("Resource_ojldh"), SubResource("Resource_ph0by"), SubResource("Resource_eff5b"), SubResource("Resource_jpjcc"), SubResource("Resource_q24br"), SubResource("Resource_1166h"), SubResource("Resource_i412c"), SubResource("Resource_5uceb"), SubResource("Resource_xce12"), SubResource("Resource_5lvs3"), SubResource("Resource_snf3o"), SubResource("Resource_tj5gt")])
+
+[resource]
+script = ExtResource("3_8atly")
+system_id = 2
+star_type = 0
+star_radius = 141.822
+star_mass = 2.39323
+star_volume = 4.02331e+33
+planets = Array[ExtResource("2_n7osn")]([SubResource("Resource_5v8my"), SubResource("Resource_m4xp1"), SubResource("Resource_lgg1f"), SubResource("Resource_jil3g"), SubResource("Resource_2de5k")])

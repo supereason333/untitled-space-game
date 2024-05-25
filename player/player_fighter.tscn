@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxw5oot32ruc2"]
+[gd_scene load_steps=6 format=3 uid="uid://dxw5oot32ruc2"]
 
 [ext_resource type="Script" path="res://player/player_fighter.gd" id="1_pjm5k"]
 [ext_resource type="PackedScene" uid="uid://c6i4ycj63xxdd" path="res://player/ship_gui.tscn" id="2_c6lfx"]
@@ -6,10 +6,36 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_pj2ue"]
 size = Vector3(1, 1, 2)
 
+[sub_resource type="GDScript" id="GDScript_rcybr"]
+script/source = "extends Camera3D
+
+var min_dist := 1
+var max_dist := 4
+var movement_factor := 0.1
+var dist := 0.1:
+	set(value):
+		var tween = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+		dist = clamp(value, min_dist, max_dist)
+		tween.tween_property(self, \"position\", Vector3(0, 1.1, dist) , 0.3)
+	get:
+		return dist
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	if Input.is_action_just_pressed(\"scroll_up\"):
+		dist += movement_factor
+	elif Input.is_action_just_pressed(\"scroll_down\"):
+		dist -= movement_factor
+"
+
 [sub_resource type="BoxMesh" id="BoxMesh_x61hm"]
 size = Vector3(1, 1, 1.98)
 
-[node name="RigidBody3D" type="RigidBody3D" groups=["player"]]
+[node name="PlayerFighter" type="RigidBody3D" groups=["player"]]
 gravity_scale = 2.66454e-15
 linear_damp = 2.0
 angular_damp = 2.0
@@ -19,7 +45,8 @@ script = ExtResource("1_pjm5k")
 shape = SubResource("BoxShape3D_pj2ue")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15443, 2.07098)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 2.071)
+script = SubResource("GDScript_rcybr")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_x61hm")
