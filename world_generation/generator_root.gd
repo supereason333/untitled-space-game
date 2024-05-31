@@ -1,6 +1,8 @@
 extends Node
 
 func _ready():
+	perlin_noise.noise_type = FastNoiseLite.TYPE_PERLIN
+	
 	#add_sibling.call_deferred(generate_system(0))
 	#generate_save_system("res://saver_loader/saves/testworld.tres", 0)
 	#for i in 10:
@@ -36,20 +38,21 @@ var chance_generate_moons := 0.9
 
 var rnd = RandomNumberGenerator.new()
 var rnd_p = RandomNumberGenerator.new()
+var rnd_map = RandomNumberGenerator.new()
 
 func generate_save_system(system_id: int, save_path: String):
-	var system = generate_system(system_id)
+	var system = generate_system(system_id, GlobalUtils.main_seed)
 	
 	ResourceSaver.save(system, save_path)
 	
 	return system
 
 
-func generate_system(system_id: int):			# Generates a whole new system
+func generate_system(system_id: int, seed:int):			# Generates a whole new system
 	# Adds the system and star
 	var system = GeneratedSystem.new()
 	
-	rnd.seed = hash(hash(GlobalUtils.main_seed) + hash(system_id))
+	rnd.seed = hash(hash(seed) + hash(system_id))
 	var begin_rnd_state = rnd.state
 	system.system_id = system_id
 	
@@ -164,12 +167,6 @@ func generate_moon(big_moon: bool, parent_body_mass: float):
 	var moon := GeneratedMoon.new()
 	return moon
 
-
-func rnd_from_chance(input: float):			# chooses true/false from a chance. Input = 0.3 -> 30% to return true
-	if input < rnd.randf(): return false
-	else: return true
-
-
 func scatter_array(input, amount: int):
 	for i in amount:
 		var a = rnd.randi_range(0, input.size() - 1)
@@ -178,3 +175,12 @@ func scatter_array(input, amount: int):
 			input[a] -= 1
 			input[b] += 1
 	return input
+
+func rnd_from_chance(input: float):			# chooses true/false from a chance. Input = 0.3 -> 30% to return true
+	if input < rnd.randf(): return false
+	else: return true
+
+var perlin_noise := FastNoiseLite.new()
+
+func generate_map(pos:Vector2, generate_radius:float, seed:int):	# generates a map of systemns that surround the positon
+	pass

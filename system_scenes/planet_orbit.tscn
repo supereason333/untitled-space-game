@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://8p5e70braiye"]
+[gd_scene load_steps=6 format=3 uid="uid://8p5e70braiye"]
 
 [ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="1_b66ax"]
+[ext_resource type="Script" path="res://system_scenes/planet_orbit.gd" id="1_rolxy"]
 [ext_resource type="PackedScene" uid="uid://dxw5oot32ruc2" path="res://player/player_fighter.tscn" id="2_4wicy"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_hjcar"]
@@ -10,6 +11,7 @@ size = Vector3(10, 0.01, 10)
 size = Vector3(10, 0.1, 10)
 
 [node name="PlanetOrbit" type="Node3D"]
+script = ExtResource("1_rolxy")
 
 [node name="SunLight" parent="." instance=ExtResource("1_b66ax")]
 transform = Transform3D(1, 0, 0, 0, 0.92647, 0.37637, 0, -0.37637, 0.92647, 0, 0, 0)

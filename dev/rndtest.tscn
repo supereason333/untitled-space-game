@@ -3,21 +3,20 @@
 [sub_resource type="GDScript" id="GDScript_t51gh"]
 script/source = "extends Node
 
-var rnd = RandomNumberGenerator.new()
-var num1 = 0.0
-var num2 = 10.0
+var rnd := RandomNumberGenerator.new()
+var perlin_noise := FastNoiseLite.new()
 
+var num := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	perlin_noise.noise_type = FastNoiseLite.TYPE_PERLIN
+	perlin_noise.seed = 1
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if num1 != num2: 
-		num1 = move_toward(num1, num2, num2/100)
-		print_debug(num1)
+	pass
 "
 
 [node name="Node" type="Node"]

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bm7uy2a1ackfa"]
+
+[ext_resource type="Script" path="res://dev/map_gen_test.gd" id="1_ivfky"]
+[ext_resource type="Texture2D" uid="uid://c2nv7lo1ichml" path="res://dev/pixel.png" id="2_y7si6"]
+
+[node name="MapGenTest" type="Node2D"]
+script = ExtResource("1_ivfky")
+
+[node name="Pixel" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_y7si6")
+
+[node name="NoiseBackground" type="Node2D" parent="."]
+
+[node name="GenerateButton" type="Button" parent="."]
+offset_left = 1728.0
+offset_top = 8.0
+offset_right = 1912.0
+offset_bottom = 96.0
+text = "Generate"
+
+[node name="SpinBox" type="SpinBox" parent="."]
+offset_right = 83.0625
+offset_bottom = 31.0
+max_value = 6.96942e+06
+
+[connection signal="pressed" from="GenerateButton" to="." method="_on_generate_button_pressed"]
