@@ -5,3 +5,5 @@
 # The stupid mac files
 *.DS_Store
 .DS_Store
+
+saver_loader/saves/

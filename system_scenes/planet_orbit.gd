@@ -2,6 +2,8 @@ extends Node3D
 
 var system:GeneratedSystem
 
+var current_planet := 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -10,8 +12,8 @@ func _ready():
 func _process(delta):
 	pass
 
-func load_system():
-	pass
+func load_system(actual_system:GeneratedSystem):
+	system = actual_system
 
-func set_star(pos_rel:Vector3):
+func set_star(pos_rel:Vector2):
 	pass

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c44oalj7k31km"]
+
+[ext_resource type="Script" path="res://dev/map_gen_test_2.gd" id="1_3jpu5"]
+
+[node name="MapGenTest2" type="Node2D"]
+script = ExtResource("1_3jpu5")

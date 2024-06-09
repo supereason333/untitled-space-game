@@ -7,7 +7,7 @@
 script = ExtResource("1_ivfky")
 
 [node name="Pixel" type="Sprite2D" parent="."]
-scale = Vector2(4, 4)
+scale = Vector2(6, 6)
 texture = ExtResource("2_y7si6")
 
 [node name="NoiseBackground" type="Node2D" parent="."]

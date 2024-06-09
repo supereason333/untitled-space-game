@@ -1,8 +1,6 @@
 extends Node
 
 func _ready():
-	perlin_noise.noise_type = FastNoiseLite.TYPE_PERLIN
-	
 	#add_sibling.call_deferred(generate_system(0))
 	#generate_save_system("res://saver_loader/saves/testworld.tres", 0)
 	#for i in 10:
@@ -13,6 +11,7 @@ func _ready():
 Distances:
 	between planets: AU
 	between moons: km
+	between stars: ly
 Radii:
 	Stars: solar radius
 	planets: km
@@ -39,22 +38,25 @@ var chance_generate_moons := 0.9
 var rnd = RandomNumberGenerator.new()
 var rnd_p = RandomNumberGenerator.new()
 var rnd_map = RandomNumberGenerator.new()
-
+"""
 func generate_save_system(system_id: int, save_path: String):
 	var system = generate_system(system_id, GlobalUtils.main_seed)
 	
 	ResourceSaver.save(system, save_path)
 	
 	return system
+"""
 
-
-func generate_system(system_id: int, seed:int):			# Generates a whole new system
+func generate_system(system_sector_id: int, seed:int, sector_x:int, sector_y:int, pos_in_sector:Vector2):			# Generates a whole new system
 	# Adds the system and star
-	var system = GeneratedSystem.new()
+	var system := GeneratedSystem.new()
 	
-	rnd.seed = hash(hash(seed) + hash(system_id))
+	rnd.seed = hash(hash(seed) + hash(str(sector_x) + str(sector_y)) + hash(system_sector_id))
 	var begin_rnd_state = rnd.state
-	system.system_id = system_id
+	system.system_sector_id = system_sector_id
+	system.system_in_sector_x = sector_x
+	system.system_in_sector_y = sector_y
+	system.position_in_sector = pos_in_sector
 	
 	var chance = rnd.randf()		# take a chance
 	if chance < 0.1:
@@ -115,7 +117,7 @@ func generate_system(system_id: int, seed:int):			# Generates a whole new system
 		spread = ave_dist / 1.5
 		
 		for r in i:
-			system.planets.append(generate_planet(system.star_mass, planet_id, ave_dist, spread))
+			system.planets.append(generate_planet(system.star_mass, planet_id, ave_dist, rnd.seed, spread))
 			planet_id += 1
 	# Sorts the planets in order
 	# working on it
@@ -130,8 +132,8 @@ func generate_system(system_id: int, seed:int):			# Generates a whole new system
 	return system
 
 
-func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, spread: float = 1):
-	rnd_p.seed = hash(hash(planet_id) + hash(GlobalUtils.main_seed))
+func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, seed:int, spread: float = 1):
+	rnd_p.seed = hash(hash(planet_id) + hash(seed))
 	var begin_state = rnd_p.state
 	
 	var planet := GeneratedPlanet.new()
@@ -180,7 +182,46 @@ func rnd_from_chance(input: float):			# chooses true/false from a chance. Input 
 	if input < rnd.randf(): return false
 	else: return true
 
-var perlin_noise := FastNoiseLite.new()
+var noise := FastNoiseLite.new()
+var sec_rnd := RandomNumberGenerator.new()
+var noise_scale := 10.0
 
-func generate_map(pos:Vector2, generate_radius:float, seed:int):	# generates a map of systemns that surround the positon
-	pass
+func generate_sector(sec_x:int, sec_y:int, seed:int):	# Generates a sector Each sector is 100ly * 100ly. stars are --> SHOULD roughly be 5ly apart. X and Y tells you which sector it is
+														# The sector's origin on the BOTTOM LEFT it is the "sec_x" and "sec_y" i keep typing "sex_x"
+	noise.noise_type = FastNoiseLite.TYPE_SIMPLEX
+	var sector := GeneratedSector.new()
+	sec_rnd.seed = seed
+	noise.seed = seed
+	var sector_size := 100 		# Just for clarity, this NEVER changes or i cry then the math gets screwed
+	var gen_threshold := 0.89
+	
+	var base_x := 100 * sec_x * noise_scale
+	var base_y := 100 * sec_y * noise_scale
+	
+	var current_id := 0
+	
+	sector.sector_x = sec_x
+	sector.sector_y = sec_y
+	
+	for x in sector_size:
+		for y in sector_size:
+			var noise_data := (noise.get_noise_2d(x * noise_scale + base_x, y * noise_scale + base_y) + 1.0) / 2.0
+			if noise_data > gen_threshold:		# then it generates a system there
+				var pos := Vector2(x * sec_rnd.randfn(1, 0.01), y * sec_rnd.randfn(1, 0.01))
+				var system:GeneratedSystem = generate_system(current_id, seed, sec_x, sec_y, pos)
+				
+				sector.systems.append(system)
+				
+	return sector
+
+func generate_sector_noise(sec_x:int, sec_y:int, seed:int):
+	noise.noise_type = FastNoiseLite.TYPE_SIMPLEX
+	var sector_noise = []
+	
+	for x in 100:
+		sector_noise.append(Array())
+		for y in 100:
+			var noise_data := (noise.get_noise_2d(x * noise_scale + 100 * sec_x * noise_scale, y * noise_scale + 100 * sec_y * noise_scale) + 1.0) / 2.0
+			sector_noise[x].append(noise_data)
+			
+	return sector_noise

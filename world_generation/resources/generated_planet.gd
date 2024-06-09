@@ -9,4 +9,6 @@ extends Resource
 @export var mass := 0.0					# mass of planet
 @export var volume := 0.0				# Volume of planet
 
+@export var last_pos := 0.0				# saved location in orbit in radians around star
+
 @export var moons:Array[GeneratedMoon]

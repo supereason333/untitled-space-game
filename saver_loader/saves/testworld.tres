@@ -3220,9 +3220,11 @@ moons = Array[ExtResource("1_viqt2")]([SubResource("Resource_sm475"), SubResourc
 
 [resource]
 script = ExtResource("3_8atly")
-system_id = 2
 star_type = 0
 star_radius = 141.822
 star_mass = 2.39323
 star_volume = 4.02331e+33
+system_in_sector_x = 0
+system_in_sector_y = 0
+position_in_sector = Vector2(0, 0)
 planets = Array[ExtResource("2_n7osn")]([SubResource("Resource_5v8my"), SubResource("Resource_m4xp1"), SubResource("Resource_lgg1f"), SubResource("Resource_jil3g"), SubResource("Resource_2de5k")])

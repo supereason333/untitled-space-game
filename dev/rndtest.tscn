@@ -10,8 +10,9 @@ var num := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	perlin_noise.noise_type = FastNoiseLite.TYPE_PERLIN
-	perlin_noise.seed = 1
+	var test := [[1,2,3], [\"a\",\"b\",\"c\"], [69,420,100]]
+	print(test)
+	print(test[0][1])
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
