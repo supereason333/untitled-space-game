@@ -1,0 +1,257 @@
+[gd_scene format=3 uid="uid://cibkcl3wluud3"]
+
+[node name="3rdSystemMap" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="systemid label" type="Label" parent="Left"]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 341.0
+offset_bottom = 42.0
+text = "System ID"
+
+[node name="seed label" type="Label" parent="Left"]
+offset_left = 416.0
+offset_top = 16.0
+offset_right = 497.0
+offset_bottom = 42.0
+text = "Main Seed"
+
+[node name="jeepers creepers" type="Label" parent="Left"]
+offset_left = 16.0
+offset_top = 312.0
+offset_right = 116.0
+offset_bottom = 338.0
+text = "Select Planet"
+
+[node name="IDSpinBox" type="SpinBox" parent="Left"]
+offset_left = 264.0
+offset_top = 48.0
+offset_right = 347.062
+offset_bottom = 79.0
+max_value = 1e+08
+
+[node name="SeedSpinBox" type="SpinBox" parent="Left"]
+offset_left = 416.0
+offset_top = 48.0
+offset_right = 499.062
+offset_bottom = 79.0
+max_value = 1e+06
+
+[node name="GenerateButton" type="Button" parent="Left"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 104.0
+text = "Generate new system
+(only one click requred)"
+
+[node name="Labels" type="HBoxContainer" parent="Left"]
+offset_left = 16.0
+offset_top = 128.0
+offset_right = 143.0
+offset_bottom = 244.0
+
+[node name="NameLabels" type="VBoxContainer" parent="Left/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="Left/Labels/NameLabels"]
+layout_mode = 2
+text = "System ID: "
+
+[node name="StarType" type="Label" parent="Left/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Type:"
+
+[node name="StarRadius" type="Label" parent="Left/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Radius"
+
+[node name="StarMass" type="Label" parent="Left/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Mass"
+
+[node name="Planets" type="Label" parent="Left/Labels/NameLabels"]
+layout_mode = 2
+text = "Planets:"
+
+[node name="DataLabels" type="VBoxContainer" parent="Left/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="Left/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarType" type="Label" parent="Left/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarRadius" type="Label" parent="Left/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarMass" type="Label" parent="Left/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Planets" type="Label" parent="Left/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetLabels" type="HBoxContainer" parent="Left"]
+offset_left = 16.0
+offset_top = 368.0
+offset_right = 143.0
+offset_bottom = 514.0
+
+[node name="NameLabels" type="VBoxContainer" parent="Left/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="Left/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Radius:"
+
+[node name="OrbitalRadius" type="Label" parent="Left/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Radius"
+
+[node name="OrbitalPeriod" type="Label" parent="Left/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Period"
+
+[node name="Type" type="Label" parent="Left/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Type:"
+
+[node name="Moons" type="Label" parent="Left/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Moons:"
+
+[node name="DataLabels" type="VBoxContainer" parent="Left/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="Left/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalRadius" type="Label" parent="Left/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalPeriod" type="Label" parent="Left/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Type" type="Label" parent="Left/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Moons" type="Label" parent="Left/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetSelect" type="SpinBox" parent="Left"]
+offset_left = 128.0
+offset_top = 312.0
+offset_right = 211.062
+offset_bottom = 343.0
+max_value = 15.0
+
+[node name="SeedLabel" type="Label" parent="Left"]
+offset_left = 552.0
+offset_top = 16.0
+offset_right = 633.0
+offset_bottom = 42.0
+text = "seed?"
+
+[node name="Right" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="jeepers creepers2" type="Label" parent="Right"]
+layout_mode = 0
+offset_left = -87.0
+offset_top = 31.0
+offset_right = 13.0
+offset_bottom = 57.0
+text = "Time (day)"
+
+[node name="TimeSelect" type="SpinBox" parent="Right"]
+layout_mode = 0
+offset_left = -87.0
+offset_top = 55.0
+offset_right = -3.9375
+offset_bottom = 86.0
+max_value = 1e+09
+step = 0.1
+
+[node name="DoSpin" type="CheckButton" parent="Right"]
+layout_mode = 0
+offset_left = -183.0
+offset_top = 55.0
+offset_right = -102.0
+offset_bottom = 86.0
+text = "spin"
+
+[node name="TimeRateSelect" type="SpinBox" parent="Right"]
+layout_mode = 0
+offset_left = -87.0
+offset_top = 127.0
+offset_right = -3.9375
+offset_bottom = 158.0
+step = 0.1
+
+[node name="jeepers creepers3" type="Label" parent="Right"]
+layout_mode = 0
+offset_left = -87.0
+offset_top = 103.0
+offset_right = 13.0
+offset_bottom = 129.0
+text = "Time rate"
+
+[node name="RightBot" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ZoomSlider" type="VSlider" parent="RightBot"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -287.0
+offset_right = 23.0
+offset_bottom = 17.0
+min_value = 0.1
+step = 0.1
+value = 1.0
+
+[node name="Button" type="Button" parent="RightBot"]
+layout_mode = 0
+offset_left = -113.0
+offset_top = -47.0
+offset_right = -9.0
+offset_bottom = 17.0
+keep_pressed_outside = true
+text = "Drag"

@@ -47,16 +47,18 @@ func generate_save_system(system_id: int, save_path: String):
 	return system
 """
 
-func generate_system(system_sector_id: int, seed:int, sector_x:int, sector_y:int, pos_in_sector:Vector2):			# Generates a whole new system
+func generate_system(id_in_sector: int, seed:int, sector_x:int, sector_y:int, pos_in_sector:Vector2):			# Generates a whole new system
 	# Adds the system and star
 	var system := GeneratedSystem.new()
 	
-	rnd.seed = hash(hash(seed) + hash(str(sector_x) + str(sector_y)) + hash(system_sector_id))
+	rnd.seed = hash(hash(seed) + hash(str(sector_x) + str(sector_y)) + hash(id_in_sector))
 	var begin_rnd_state = rnd.state
-	system.system_sector_id = system_sector_id
+	system.id_in_sector = id_in_sector
 	system.system_in_sector_x = sector_x
 	system.system_in_sector_y = sector_y
 	system.position_in_sector = pos_in_sector
+	
+	system.last_visit_time = Time.get_unix_time_from_system()
 	
 	var chance = rnd.randf()		# take a chance
 	if chance < 0.1:
@@ -146,6 +148,8 @@ func generate_planet(parent_body_mass: float, planet_id: int, mean_dist: float, 
 	planet.volume = GlobalUtils.sphere_volume(planet.radius)
 	planet.mass = planet.volume * PLANET_TYPE_DENSITY[planet.type]
 	
+	planet.last_pos = rnd_p.randf_range(0, PI * 2)
+	
 	moon_mult = planet.radius / 3000
 	if rnd_from_chance(chance_generate_moons):
 		planet.moon_amount = int(rnd_p.randfn(5 * moon_mult, 1))
@@ -209,6 +213,7 @@ func generate_sector(sec_x:int, sec_y:int, seed:int):	# Generates a sector Each 
 			if noise_data > gen_threshold:		# then it generates a system there
 				var pos := Vector2(x * sec_rnd.randfn(1, 0.01), y * sec_rnd.randfn(1, 0.01))
 				var system:GeneratedSystem = generate_system(current_id, seed, sec_x, sec_y, pos)
+				current_id += 1
 				
 				sector.systems.append(system)
 				

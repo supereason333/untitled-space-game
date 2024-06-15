@@ -10,9 +10,8 @@ var num := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var test := [[1,2,3], [\"a\",\"b\",\"c\"], [69,420,100]]
-	print(test)
-	print(test[0][1])
+	var a:GeneratedSector = SaverLoader.load_game_sector(0, 0)
+	var b:GeneratedSector = SaverLoader.load_game_sector(10, 10)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

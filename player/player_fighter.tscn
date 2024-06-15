@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxw5oot32ruc2"]
+[gd_scene load_steps=7 format=3 uid="uid://dxw5oot32ruc2"]
 
 [ext_resource type="Script" path="res://player/player_fighter.gd" id="1_pjm5k"]
-[ext_resource type="PackedScene" uid="uid://c6i4ycj63xxdd" path="res://player/ship_gui.tscn" id="2_c6lfx"]
+[ext_resource type="PackedScene" uid="uid://csa528dbcatoj" path="res://menus/player/player_menu.tscn" id="3_twev4"]
+[ext_resource type="PackedScene" uid="uid://c067f5c0bpvdy" path="res://player/gui/debug_gui.tscn" id="3_vv7wm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pj2ue"]
 size = Vector3(1, 1, 2)
@@ -51,4 +52,12 @@ script = SubResource("GDScript_rcybr")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_x61hm")
 
-[node name="ship_gui" parent="." instance=ExtResource("2_c6lfx")]
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+spot_angle = 66.4568
+
+[node name="PlayerMenu" parent="." instance=ExtResource("3_twev4")]
+visible = false
+
+[node name="DebugGui" parent="." instance=ExtResource("3_vv7wm")]
+visible = false

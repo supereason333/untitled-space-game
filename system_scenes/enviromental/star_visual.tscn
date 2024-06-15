@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://b03omxcxroif5"]
+
+[sub_resource type="GDScript" id="GDScript_56wbm"]
+script/source = "extends Node3D
+
+var star_type := 0
+
+func set_star_amount():
+	pass		# impliment later for multiple stars to be shown
+
+func set_star_type(type:int):
+	star_type = type		# changes the type of star to be shown
+"
+
+[sub_resource type="SphereMesh" id="SphereMesh_04okk"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dp8sf"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 6.19
+ao_enabled = true
+
+[node name="StarVisual" type="Node3D"]
+script = SubResource("GDScript_56wbm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_04okk")
+surface_material_override/0 = SubResource("StandardMaterial3D_dp8sf")

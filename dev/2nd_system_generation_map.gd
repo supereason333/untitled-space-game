@@ -23,10 +23,10 @@ func _process(delta):
 		time_selector.value += $GUI/TimeRateSelect.value
 
 func _on_generate_button_pressed():
-	system = SystemGenerator.generate_save_system($GUI/IDSpinBox.value, save_path)
+	system = GeneratorRoot.generate_system($GUI/IDSpinBox.value, $GUI/SeedSpinBox.value, 0, 0, Vector2(0, 0))
 	
 	var planets = system.planets.size()
-	$GUI/Labels/DataLabels/SystemId.text = str(system.system_id)
+	$GUI/Labels/DataLabels/SystemId.text = str(system.id_in_sector)
 	$GUI/Labels/DataLabels/StarType.text = str(GeneratedIDs.STAR_TYPE_STRING[system.star_type])
 	$GUI/Labels/DataLabels/StarRadius.text = str(system.star_radius) + " (Solar radius)"
 	$GUI/Labels/DataLabels/StarMass.text = str(system.star_mass) + " (Solar mass)"

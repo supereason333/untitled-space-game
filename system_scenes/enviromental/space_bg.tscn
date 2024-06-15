@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bx8m1r1yfskd3"]
+[gd_scene load_steps=10 format=3 uid="uid://bx8m1r1yfskd3"]
 
-[ext_resource type="PackedScene" uid="uid://w7syeat2uu48" path="res://system_scenes/enviromental/world_environment.tscn" id="1_fpdw1"]
 [ext_resource type="Script" path="res://system_scenes/enviromental/space_bg.gd" id="1_qv22r"]
 [ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="2_idakl"]
+[ext_resource type="Texture2D" uid="uid://dyvsm3cs1gqj7" path="res://resources/bg_pictures/jake-weirick-Q_RBVFFXR_g-unsplash.jpg" id="4_kvtul"]
+[ext_resource type="PackedScene" uid="uid://b03omxcxroif5" path="res://system_scenes/enviromental/star_visual.tscn" id="4_xiggd"]
 
 [sub_resource type="GDScript" id="GDScript_nb4xh"]
 script/source = "extends Camera3D
@@ -16,12 +17,30 @@ func camera_rot(rot: Vector3):
 	rotation = rot
 "
 
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oa882"]
+panorama = ExtResource("4_kvtul")
+
+[sub_resource type="Sky" id="Sky_7v6th"]
+sky_material = SubResource("PanoramaSkyMaterial_oa882")
+
+[sub_resource type="Environment" id="Environment_vbbn3"]
+background_mode = 2
+sky = SubResource("Sky_7v6th")
+glow_enabled = true
+fog_sky_affect = 0.064
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_38w3d"]
+
 [node name="SpaceBG" type="Node3D"]
 script = ExtResource("1_qv22r")
-
-[node name="WorldEnvironment" parent="." instance=ExtResource("1_fpdw1")]
 
 [node name="SunLight" parent="." instance=ExtResource("2_idakl")]
 
 [node name="Camera3D" type="Camera3D" parent="."]
 script = SubResource("GDScript_nb4xh")
+
+[node name="StarVisual" parent="." instance=ExtResource("4_xiggd")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vbbn3")
+camera_attributes = SubResource("CameraAttributesPractical_38w3d")

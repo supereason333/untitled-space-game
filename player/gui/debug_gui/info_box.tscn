@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://t32ynvmp18bb"]
+
+[ext_resource type="Script" path="res://player/gui/debug_gui/info_box.gd" id="1_jk4mc"]
+
+[node name="InfoBox" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jk4mc")
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 2
+text = "data name"
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 2
+
+[node name="Data" type="Label" parent="."]
+layout_mode = 2
+text = "actual data"

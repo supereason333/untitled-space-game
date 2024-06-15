@@ -9,7 +9,8 @@ extends Resource
 @export var system_in_sector_x:int
 @export var system_in_sector_y:int
 @export var position_in_sector:Vector2
-@export var system_sector_id:int
+@export var id_in_sector:int
 
 @export var planets:Array[GeneratedPlanet]
 
+@export var last_visit_time:float

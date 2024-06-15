@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c067f5c0bpvdy"]
+
+[ext_resource type="Script" path="res://player/gui/debug_gui.gd" id="1_l1n0e"]
+
+[node name="DebugGui" type="CanvasLayer"]
+script = ExtResource("1_l1n0e")
+
+[node name="GuiLabel" type="Label" parent="."]
+offset_left = 1832.0
+offset_top = 8.0
+offset_right = 1915.0
+offset_bottom = 34.0
+text = "Debug GUI"
+
+[node name="SystemInfoContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

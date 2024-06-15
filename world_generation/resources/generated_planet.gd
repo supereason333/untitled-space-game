@@ -1,13 +1,13 @@
 class_name GeneratedPlanet
 extends Resource
 
-@export var radius := 0.0				# Radius of the body
-@export var orbital_radius := 0.0		# Radius from the center of parent body
-@export var orbital_period := 0.0		# orbital period search it up
-@export var type := 0					# Type of planet
-@export var moon_amount := 0			# amount of moons
-@export var mass := 0.0					# mass of planet
-@export var volume := 0.0				# Volume of planet
+@export var radius:float				# Radius of the body
+@export var orbital_radius:float		# Radius from the center of parent body
+@export var orbital_period:float		# orbital period search it up
+@export var type:int					# Type of planet
+@export var moon_amount:int				# amount of moons
+@export var mass:float					# mass of planet
+@export var volume:float				# Volume of planet
 
 @export var last_pos := 0.0				# saved location in orbit in radians around star
 

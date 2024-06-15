@@ -1,0 +1,233 @@
+[gd_scene load_steps=2 format=3 uid="uid://8v0vddnn0sfq"]
+
+[ext_resource type="Script" path="res://dev/2nd_system_generation_map.gd" id="1_qwu8d"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_qwu8d")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="systemid label" type="Label" parent="GUI"]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 341.0
+offset_bottom = 42.0
+text = "System ID"
+
+[node name="seed label" type="Label" parent="GUI"]
+offset_left = 416.0
+offset_top = 16.0
+offset_right = 497.0
+offset_bottom = 42.0
+text = "Main Seed"
+
+[node name="jeepers creepers" type="Label" parent="GUI"]
+offset_left = 16.0
+offset_top = 312.0
+offset_right = 116.0
+offset_bottom = 338.0
+text = "Select Planet"
+
+[node name="jeepers creepers2" type="Label" parent="GUI"]
+offset_left = 1768.0
+offset_top = 16.0
+offset_right = 1868.0
+offset_bottom = 42.0
+text = "Time (day)"
+
+[node name="IDSpinBox" type="SpinBox" parent="GUI"]
+offset_left = 264.0
+offset_top = 48.0
+offset_right = 347.062
+offset_bottom = 79.0
+max_value = 1e+08
+
+[node name="SeedSpinBox" type="SpinBox" parent="GUI"]
+offset_left = 416.0
+offset_top = 48.0
+offset_right = 499.062
+offset_bottom = 79.0
+max_value = 1e+06
+
+[node name="GenerateButton" type="Button" parent="GUI"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 104.0
+text = "Generate new system
+(only one click requred)"
+
+[node name="Labels" type="HBoxContainer" parent="GUI"]
+offset_left = 16.0
+offset_top = 128.0
+offset_right = 143.0
+offset_bottom = 244.0
+
+[node name="NameLabels" type="VBoxContainer" parent="GUI/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "System ID: "
+
+[node name="StarType" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Type:"
+
+[node name="StarRadius" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Radius"
+
+[node name="StarMass" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Star Mass"
+
+[node name="Planets" type="Label" parent="GUI/Labels/NameLabels"]
+layout_mode = 2
+text = "Planets:"
+
+[node name="DataLabels" type="VBoxContainer" parent="GUI/Labels"]
+layout_mode = 2
+
+[node name="SystemId" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarType" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarRadius" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="StarMass" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Planets" type="Label" parent="GUI/Labels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetLabels" type="HBoxContainer" parent="GUI"]
+offset_left = 16.0
+offset_top = 368.0
+offset_right = 143.0
+offset_bottom = 514.0
+
+[node name="NameLabels" type="VBoxContainer" parent="GUI/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Radius:"
+
+[node name="OrbitalRadius" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Radius"
+
+[node name="OrbitalPeriod" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Orbital Period"
+
+[node name="Type" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Type:"
+
+[node name="Moons" type="Label" parent="GUI/PlanetLabels/NameLabels"]
+layout_mode = 2
+text = "Moons:"
+
+[node name="DataLabels" type="VBoxContainer" parent="GUI/PlanetLabels"]
+layout_mode = 2
+
+[node name="Radius" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalRadius" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="OrbitalPeriod" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Type" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="Moons" type="Label" parent="GUI/PlanetLabels/DataLabels"]
+layout_mode = 2
+text = "data"
+
+[node name="PlanetSelect" type="SpinBox" parent="GUI"]
+offset_left = 128.0
+offset_top = 312.0
+offset_right = 211.062
+offset_bottom = 343.0
+max_value = 15.0
+
+[node name="TimeSelect" type="SpinBox" parent="GUI"]
+offset_left = 1768.0
+offset_top = 40.0
+offset_right = 1851.06
+offset_bottom = 71.0
+max_value = 1e+09
+step = 0.1
+
+[node name="DoSpin" type="CheckButton" parent="GUI"]
+offset_left = 1672.0
+offset_top = 40.0
+offset_right = 1753.0
+offset_bottom = 71.0
+text = "spin"
+
+[node name="TimeRateSelect" type="SpinBox" parent="GUI"]
+offset_left = 1768.0
+offset_top = 112.0
+offset_right = 1851.06
+offset_bottom = 143.0
+step = 0.1
+
+[node name="jeepers creepers3" type="Label" parent="GUI"]
+offset_left = 1768.0
+offset_top = 88.0
+offset_right = 1868.0
+offset_bottom = 114.0
+text = "Time rate"
+
+[node name="SeedLabel" type="Label" parent="GUI"]
+offset_left = 552.0
+offset_top = 16.0
+offset_right = 633.0
+offset_bottom = 42.0
+text = "seed?"
+
+[node name="ZoomSlider" type="VSlider" parent="GUI"]
+offset_left = 1888.0
+offset_top = 752.0
+offset_right = 1904.0
+offset_bottom = 1056.0
+min_value = 0.1
+step = 0.1
+value = 1.0
+
+[node name="Button" type="Button" parent="GUI"]
+offset_left = 1768.0
+offset_top = 992.0
+offset_right = 1872.0
+offset_bottom = 1056.0
+keep_pressed_outside = true
+text = "Drag"
+
+[connection signal="value_changed" from="GUI/SeedSpinBox" to="." method="_on_seed_spin_box_value_changed"]
+[connection signal="pressed" from="GUI/GenerateButton" to="." method="_on_generate_button_pressed"]
+[connection signal="value_changed" from="GUI/PlanetSelect" to="." method="_on_planet_select_value_changed"]
+[connection signal="value_changed" from="GUI/TimeSelect" to="." method="_on_time_select_value_changed"]
+[connection signal="value_changed" from="GUI/TimeRateSelect" to="." method="_on_time_select_value_changed"]
+[connection signal="value_changed" from="GUI/ZoomSlider" to="." method="_on_zoom_slider_value_changed"]
+[connection signal="button_down" from="GUI/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="GUI/Button" to="." method="_on_button_button_up"]

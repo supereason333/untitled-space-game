@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://main_display/game.gd" id="1_ek6v4"]
 [ext_resource type="PackedScene" uid="uid://8p5e70braiye" path="res://system_scenes/planet_orbit.tscn" id="2_qjv8c"]
 
-[node name="Game" type="Node2D" groups=["game"]]
+[node name="Game" type="Node2D"]
 script = ExtResource("1_ek6v4")
 
 [node name="Viewports" type="Control" parent="."]
@@ -40,6 +40,4 @@ render_target_update_mode = 4
 
 [node name="PlanetOrbit" parent="Viewports/Game/SubViewport" instance=ExtResource("2_qjv8c")]
 
-[connection signal="change_sun_rotation" from="." to="Viewports/Background/SubViewport/SpaceBG" method="_on_game_change_sun_rotation"]
-[connection signal="change_sun_rotation" from="." to="Viewports/Game/SubViewport/PlanetOrbit" method="_on_game_change_sun_rotation"]
 [connection signal="place_bg_objects" from="." to="Viewports/Background/SubViewport/SpaceBG" method="_on_game_place_bg_objects"]

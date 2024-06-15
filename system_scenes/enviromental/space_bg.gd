@@ -1,15 +1,17 @@
 extends Node3D
 
-var star_visual = preload("res://system_scenes/visual/star_visual.tscn")
+@onready var star := $StarVisual
+@onready var sun := $SunLight
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-
-
-func place_star():
-	pass
-
+func place_star(star_position:Vector2):
+	star.position = Vector3(star_position.x, 0, star_position.y)
+	print(star.position)
 
 func place_planet():
 	pass
+
+func _on_game_place_bg_objects(star_position):
+	place_star(star_position)
+
+func _on_game_change_sun_rotation(rotation):
+	sun.rotation = rotation

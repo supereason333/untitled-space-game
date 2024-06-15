@@ -7,7 +7,7 @@ var main_seed := 0
 
 
 func _ready():
-	main_seed = rnd.seed
+	pass
 
 
 func au_to_kilometer(distance: float):

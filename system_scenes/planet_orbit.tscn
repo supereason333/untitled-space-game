@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://8p5e70braiye"]
+[gd_scene load_steps=7 format=3 uid="uid://8p5e70braiye"]
 
 [ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="1_b66ax"]
 [ext_resource type="Script" path="res://system_scenes/planet_orbit.gd" id="1_rolxy"]
@@ -10,11 +10,13 @@ size = Vector3(10, 0.01, 10)
 [sub_resource type="BoxShape3D" id="BoxShape3D_gks3n"]
 size = Vector3(10, 0.1, 10)
 
+[sub_resource type="SphereMesh" id="SphereMesh_veeej"]
+
 [node name="PlanetOrbit" type="Node3D"]
 script = ExtResource("1_rolxy")
 
 [node name="SunLight" parent="." instance=ExtResource("1_b66ax")]
-transform = Transform3D(1, 0, 0, 0, 0.92647, 0.37637, 0, -0.37637, 0.92647, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.92647, 0.37637, 0, -0.37637, 0.92647, 0, 1.34447, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_hjcar")
@@ -26,3 +28,14 @@ shape = SubResource("BoxShape3D_gks3n")
 
 [node name="PlayerFighter" parent="." instance=ExtResource("2_4wicy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.326781, 3.85691, -0.386214)
+
+[node name="TestBall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23603, 1.26255, 0)
+mesh = SubResource("SphereMesh_veeej")
+
+[node name="Labels" type="Node3D" parent="."]
+
+[node name="SystemLabel" type="Label3D" parent="Labels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14481, 0)
+text = "Sector 0, 0
+System 0"

@@ -1,5 +1,21 @@
 extends RigidBody3D
 
+@onready var player_menu := $PlayerMenu
+
+var player_menu_showing := false:
+	set(value):
+		if player_menu_showing != value:
+			player_menu_showing = value
+			
+			player_menu.visible = value
+			
+			if value:
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			else:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get:
+		return player_menu_showing
+
 var pitch := 0.0
 var roll := 0.0
 var yaw := 0.0
@@ -16,8 +32,7 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		SaverLoader.save_game_player()
+		player_menu_showing = !player_menu_showing
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		SaverLoader.load_game_player()
