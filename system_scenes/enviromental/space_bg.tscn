@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://system_scenes/enviromental/space_bg.gd" id="1_qv22r"]
 [ext_resource type="PackedScene" uid="uid://b0kbuqgn1fmg8" path="res://system_scenes/enviromental/sun_light.tscn" id="2_idakl"]
-[ext_resource type="Texture2D" uid="uid://dyvsm3cs1gqj7" path="res://resources/bg_pictures/jake-weirick-Q_RBVFFXR_g-unsplash.jpg" id="4_kvtul"]
+[ext_resource type="Texture2D" uid="uid://bousres65o8n2" path="res://resources/bg_pictures/DSC_5098.jpeg" id="4_aje6x"]
 [ext_resource type="PackedScene" uid="uid://b03omxcxroif5" path="res://system_scenes/enviromental/star_visual.tscn" id="4_xiggd"]
 
 [sub_resource type="GDScript" id="GDScript_nb4xh"]
@@ -18,7 +18,7 @@ func camera_rot(rot: Vector3):
 "
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oa882"]
-panorama = ExtResource("4_kvtul")
+panorama = ExtResource("4_aje6x")
 
 [sub_resource type="Sky" id="Sky_7v6th"]
 sky_material = SubResource("PanoramaSkyMaterial_oa882")

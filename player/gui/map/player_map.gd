@@ -3,9 +3,9 @@ extends CanvasLayer
 @onready var smap := $SystemMap
 @onready var mmap := $MainMap
 
-var current_map := 1:
+var current_map := 0:
 	set(value):
-		current_map = clamp(current_map, 0, 1)
+		current_map = clamp(value, 0, 1)
 		match current_map:
 			0:	# main map
 				smap.hide()
@@ -17,3 +17,6 @@ var current_map := 1:
 				print_debug("PlayerMap set map value to something not expected")
 	get:
 		return current_map
+
+func _ready():
+	current_map = 0

@@ -1,5 +1,9 @@
 extends RigidBody3D
 
+# Things to be put into a settings
+const DEFAULT_MAP = 1			# main map
+
+
 @onready var player_menu := $PlayerMenu
 @onready var player_map := $PlayerMap
 
@@ -36,19 +40,40 @@ func check_menu_input():
 	if Input.is_action_just_pressed("ui_cancel"):
 		menu_showing = !menu_showing
 		player_menu.visible = menu_showing
+		if player_map.visible:
+			player_map.hide()
 	
 	if !player_menu.visible:
-		if Input.is_action_just_pressed("map"):			# press tab to go back to last view, tab again to go to main map, tab again to close. Any of the other map keys respond to the shortcut to corrosponding map
-			player_map.show_maps()
+		if Input.is_action_just_pressed("map"):			# press tab to go back to last view, tab again to go to main map (if withen time limit), tab again to close. Any of the other map keys respond to the shortcut to corrosponding map
+			if !player_map.visible:
+				player_map.show()
+			elif player_map.current_map != DEFAULT_MAP:
+				player_map.current_map = DEFAULT_MAP
+			else:
+				player_map.hide()
+		
+		if Input.is_action_just_pressed("main_map"):
+			if !player_map.visible or player_map.current_map != 0:
+				player_map.current_map = 0
+				player_map.show()
+			else:
+				player_map.hide()
 		
 		if Input.is_action_just_pressed("system_map"):
-			pass
+			if !player_map.visible or player_map.current_map != 1:
+				player_map.current_map = 1
+				player_map.show()
+			else:
+				player_map.hide()
 		
 		if Input.is_action_just_pressed("planet_map"):
 			pass
 		
+		menu_showing = player_map.visible
+		
 		if Input.is_action_just_pressed("ui_accept"):
 			SaverLoader.load_game_player()
+		
 
 func _physics_process(delta):
 	roll = Input.get_axis("fighter_roll_right", "fighter_roll_left")

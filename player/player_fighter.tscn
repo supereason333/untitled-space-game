@@ -57,10 +57,11 @@ mesh = SubResource("BoxMesh_x61hm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
 spot_angle = 66.4568
 
-[node name="PlayerMenu" parent="." instance=ExtResource("3_twev4")]
+[node name="PlayerMap" parent="." instance=ExtResource("4_qx8f7")]
 visible = false
 
 [node name="DebugGui" parent="." instance=ExtResource("3_vv7wm")]
 visible = false
 
-[node name="PlayerMap" parent="." instance=ExtResource("4_qx8f7")]
+[node name="PlayerMenu" parent="." instance=ExtResource("3_twev4")]
+visible = false

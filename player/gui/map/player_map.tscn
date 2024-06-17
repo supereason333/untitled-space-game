@@ -8,7 +8,6 @@
 script = ExtResource("1_bt4c6")
 
 [node name="SystemMap" parent="." instance=ExtResource("2_bed37")]
-visible = false
 
 [node name="MainMap" parent="." instance=ExtResource("3_hl1la")]
 visible = false
