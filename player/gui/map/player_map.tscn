@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfwenn207g8ko"]
+
+[ext_resource type="Script" path="res://player/gui/map/player_map.gd" id="1_bt4c6"]
+[ext_resource type="PackedScene" uid="uid://8shiffee4sfq" path="res://player/gui/map/system_map.tscn" id="2_bed37"]
+[ext_resource type="PackedScene" uid="uid://c3hp65n5445tb" path="res://player/gui/map/main_map.tscn" id="3_hl1la"]
+
+[node name="PlayerMap" type="CanvasLayer"]
+script = ExtResource("1_bt4c6")
+
+[node name="SystemMap" parent="." instance=ExtResource("2_bed37")]
+visible = false
+
+[node name="MainMap" parent="." instance=ExtResource("3_hl1la")]
+visible = false

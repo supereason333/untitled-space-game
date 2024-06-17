@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxw5oot32ruc2"]
+[gd_scene load_steps=8 format=3 uid="uid://dxw5oot32ruc2"]
 
 [ext_resource type="Script" path="res://player/player_fighter.gd" id="1_pjm5k"]
 [ext_resource type="PackedScene" uid="uid://csa528dbcatoj" path="res://menus/player/player_menu.tscn" id="3_twev4"]
 [ext_resource type="PackedScene" uid="uid://c067f5c0bpvdy" path="res://player/gui/debug_gui.tscn" id="3_vv7wm"]
+[ext_resource type="PackedScene" uid="uid://cfwenn207g8ko" path="res://player/gui/map/player_map.tscn" id="4_qx8f7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pj2ue"]
 size = Vector3(1, 1, 2)
@@ -61,3 +62,5 @@ visible = false
 
 [node name="DebugGui" parent="." instance=ExtResource("3_vv7wm")]
 visible = false
+
+[node name="PlayerMap" parent="." instance=ExtResource("4_qx8f7")]

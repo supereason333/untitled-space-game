@@ -1,20 +1,19 @@
 extends RigidBody3D
 
 @onready var player_menu := $PlayerMenu
+@onready var player_map := $PlayerMap
 
-var player_menu_showing := false:
+var menu_showing := false:
 	set(value):
-		if player_menu_showing != value:
-			player_menu_showing = value
-			
-			player_menu.visible = value
+		if menu_showing != value:
+			menu_showing = value
 			
 			if value:
 				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			else:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	get:
-		return player_menu_showing
+		return menu_showing
 
 var pitch := 0.0
 var roll := 0.0
@@ -31,11 +30,25 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _process(delta):
+	check_menu_input()
+
+func check_menu_input():
 	if Input.is_action_just_pressed("ui_cancel"):
-		player_menu_showing = !player_menu_showing
+		menu_showing = !menu_showing
+		player_menu.visible = menu_showing
 	
-	if Input.is_action_just_pressed("ui_accept"):
-		SaverLoader.load_game_player()
+	if !player_menu.visible:
+		if Input.is_action_just_pressed("map"):			# press tab to go back to last view, tab again to go to main map, tab again to close. Any of the other map keys respond to the shortcut to corrosponding map
+			player_map.show_maps()
+		
+		if Input.is_action_just_pressed("system_map"):
+			pass
+		
+		if Input.is_action_just_pressed("planet_map"):
+			pass
+		
+		if Input.is_action_just_pressed("ui_accept"):
+			SaverLoader.load_game_player()
 
 func _physics_process(delta):
 	roll = Input.get_axis("fighter_roll_right", "fighter_roll_left")
