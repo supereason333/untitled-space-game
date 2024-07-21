@@ -44,6 +44,12 @@ func check_menu_input():
 			player_map.hide()
 	
 	if !player_menu.visible:
+		var current_system:Array[GeneratedSystem]
+		if Input.is_action_just_pressed("map") or Input.is_action_just_pressed("system_map") or Input.is_action_just_pressed("planet_map"):
+			get_tree().call_group("game", "get_system", current_system)
+			if current_system:
+				player_map.draw_system(current_system[0])
+		
 		if Input.is_action_just_pressed("map"):			# press tab to go back to last view, tab again to go to main map (if withen time limit), tab again to close. Any of the other map keys respond to the shortcut to corrosponding map
 			if !player_map.visible:
 				player_map.show()

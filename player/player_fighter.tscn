@@ -28,9 +28,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if Input.is_action_just_pressed(\"scroll_up\"):
+	if Input.is_action_pressed(\"ui_text_scroll_up\") or Input.is_action_pressed(\"ui_text_scroll_up.macos\"):
 		dist += movement_factor
-	elif Input.is_action_just_pressed(\"scroll_down\"):
+	elif Input.is_action_pressed(\"ui_text_scroll_down\") or Input.is_action_pressed(\"ui_text_scroll_down.macos\"):
 		dist -= movement_factor
 "
 

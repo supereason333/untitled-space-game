@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://8shiffee4sfq"]
+[gd_scene load_steps=3 format=3 uid="uid://8shiffee4sfq"]
+
+[ext_resource type="Script" path="res://player/gui/map/system_map.gd" id="1_ajtmd"]
+[ext_resource type="PackedScene" uid="uid://cecmxcb2carvm" path="res://player/gui/map/system_map/system_map_display.tscn" id="2_4fq5t"]
 
 [node name="SystemMap" type="Control"]
 layout_mode = 3
@@ -7,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ajtmd")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -96,6 +100,9 @@ layout_mode = 2
 [node name="SystemMap" type="PanelContainer" parent="CenterContainer/HBoxContainer/MapPanel"]
 layout_mode = 2
 
+[node name="SystemMapDisplay" parent="CenterContainer/HBoxContainer/MapPanel/SystemMap" instance=ExtResource("2_4fq5t")]
+layout_mode = 2
+
 [node name="PlanetMap" type="PanelContainer" parent="CenterContainer/HBoxContainer/MapPanel"]
 visible = false
 layout_mode = 2
@@ -103,3 +110,5 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CenterContainer/HBoxContainer/MapPanel/PlanetMap"]
 layout_mode = 2
 text = "This is the planet map"
+
+[connection signal="tab_clicked" from="CenterContainer/HBoxContainer/MapPanel" to="." method="_on_map_panel_tab_clicked"]

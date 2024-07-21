@@ -18,5 +18,8 @@ var current_map := 0:
 	get:
 		return current_map
 
+func draw_system(system:GeneratedSystem):
+	smap.draw_system(system)
+
 func _ready():
 	current_map = 0

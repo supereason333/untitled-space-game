@@ -57,5 +57,5 @@ func get_info(data):
 	data.append(["Last Visit Time", current_system.last_visit_time])
 	data.append(["Planets", len(current_system.planets)])
 
-func get_planet_info(data, planet_id:int):
-	pass
+func get_system(data:Array):
+	data.append(current_system)

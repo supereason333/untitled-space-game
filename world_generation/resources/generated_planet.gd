@@ -10,5 +10,6 @@ extends Resource
 @export var volume:float				# Volume of planet
 
 @export var last_pos := 0.0				# saved location in orbit in radians around star
+@export var current_pos := 0.0			# Current position of planet
 
 @export var moons:Array[GeneratedMoon]
